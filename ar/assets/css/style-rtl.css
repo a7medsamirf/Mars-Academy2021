@@ -541,7 +541,7 @@ select:visited {
 
 .Mars-main-navigation .dropdown .dropdown-menu li {
   width: 100%;
-  margin-left: 0;
+  margin-right: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -4814,7 +4814,7 @@ select:visited {
 }
 
 .Mars-blog-img-text-2 .Mars-blog-img-2 .Mars-blog-date-2 {
-  left: 25px;
+  right: 25px;
   width: 80px;
   height: 80px;
   bottom: -30px;
@@ -4913,7 +4913,7 @@ select:visited {
 .Mars-blog-meta-2 a {
   font-size: 13px;
   font-weight: 700;
-  margin-right: 25px;
+  margin-left: 25px;
   position: relative;
   color: #ef4826;
   font-family: "Fira Sans";
