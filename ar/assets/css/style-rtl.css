@@ -14,11 +14,13 @@ theme.
 
 
 =====================================================================*/
+@import url('https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Nunito:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Qwigley');
+
+/* @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Nunito:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Qwigley');
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&display=swap&subset=devanagari,latin-ext');
 
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i'); */
 
 @keyframes fadeFromLeft {
   0% {
@@ -71,6 +73,7 @@ theme.
 /*global area*/
 /*----------------------------------------------------*/
 .Mars-home {
+  font-family: 'Cairo', sans-serif;
   margin: 0;
   padding: 0;
   color: #555555;
@@ -78,7 +81,6 @@ theme.
   overflow-x: hidden;
   text-align: right;
   line-height: 1.625;
-  font-family: 'Poppins', sans-serif;
   -moz-osx-font-smoothing: antialiased;
   -webkit-font-smoothing: antialiased;
 }
@@ -220,7 +222,7 @@ select:visited {
 .Mars-headline h5,
 .Mars-headline h6 {
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Cairo', sans-serif;
 }
 
 .Mars-section-title span {
@@ -250,7 +252,7 @@ select:visited {
 }
 
 .Mars-section-title h2 {
-  color: #000;
+  color: #000a1f;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.125;
@@ -477,7 +479,7 @@ select:visited {
 }
 
 .Mars-main-navigation li {
-  margin-right: 75px;
+  margin-left: 65px;
 }
 
 .Mars-main-navigation li a {
@@ -764,7 +766,7 @@ select:visited {
 }
 
 .header-style-three .Mars-main-navigation li a {
-  color: #212121;
+  color: #000a1f;
 }
 
 .header-style-three .Mars-main-navigation li a:before {
@@ -788,7 +790,7 @@ select:visited {
 }
 
 .header-style-three .Mars-header-cart-login .Mars-top-cart-login button {
-  color: #212121;
+  color: #000a1f;
 }
 
 .header-style-three .Mars-header-cart-login .Mars-top-cart-login button:hover {
@@ -798,7 +800,7 @@ select:visited {
 .header-style-three.Mars-sticky-menu {
   position: fixed;
   padding: 15px 0px;
-  background-color: #212121;
+  background-color: #000a1f;
 }
 .header-style-three.Mars-sticky-menu li a,
 .header-style-three.Mars-sticky-menu .Mars-header-cart-login .Mars-top-cart-login button {
@@ -1240,7 +1242,7 @@ select:visited {
 }
 
 .Mars-mobile_menu_button {
-  right: 0;
+  left: 0;
   top: 5px;
   z-index: 5;
   display: none;
@@ -3532,6 +3534,7 @@ select:visited {
   background-color: #fff;
   transition: 0.3s all ease-in-out;
   box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.04);
+  height: 455px;
 }
 
 .Mars-popular-course-img-text .Mars-popular-course-img {
@@ -3576,7 +3579,7 @@ select:visited {
 }
 
 .Mars-popular-course-img-text .popular-course-title h3 {
-  color: #000;
+  color: #000a1f;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.444;
@@ -3595,7 +3598,7 @@ select:visited {
 }
 
 .Mars-popular-course-img-text .popular-course-title .Mars-course-meta a i {
-  margin-right: 5px;
+  margin-left: 5px;
   color: #ef4826;
 }
 
@@ -4846,9 +4849,9 @@ select:visited {
 }
 
 .Mars-blog-img-text-2 .Mars-blog-title-text-2 h3 {
-  color: #000;
-  font-size: 24px;
-  font-weight: 700;
+  color: #000a1f;
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 15px;
   position: relative;
   padding: 10px 0px 15px;
@@ -5556,7 +5559,7 @@ select:visited {
 .Mars-newslatter-section-2 .Mars-newslatter-content {
   border-radius: 5px;
   padding: 35px 40px;
-  background-color: #212121;
+  background-color: #000a1f;
 }
 
 .Mars-newslatter-section-2 .Mars-newslatter-content .Mars-newslatter-form button {
@@ -7788,7 +7791,7 @@ select:visited {
   }
 
   .header-style-three .Mars-header-cart-login {
-    margin-right: 35px;
+    margin-left: 35px;
     padding-top: 12px;
   }
 
