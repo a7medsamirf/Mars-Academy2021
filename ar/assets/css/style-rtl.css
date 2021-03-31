@@ -1,0 +1,8211 @@
+@charset "UTF-8";
+/*----------------------------------------------------
+@File: Default Styles
+@Author: 
+@URL: 
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: 
+@Author:
+
+
+=====================================================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Nunito:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Qwigley');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&display=swap&subset=devanagari,latin-ext');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
+@keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeFromUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeFromUp {
+  animation-name: fadeFromUp;
+}
+
+.fadeFromRight {
+  animation-name: fadeFromRight;
+}
+
+.fadeFromLeft {
+  animation-name: fadeFromLeft;
+}
+
+/*global area*/
+/*----------------------------------------------------*/
+.Mars-home {
+  margin: 0;
+  padding: 0;
+  color: #555555;
+  font-size: 16px;
+  overflow-x: hidden;
+  text-align: right;
+  line-height: 1.625;
+  font-family: 'Poppins', sans-serif;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+.Mars-home::selection {
+  color: #ffffff;
+  background-color: #6e3ebf;
+}
+
+.Mars-home::-moz-selection {
+  color: #ffffff;
+  background-color: #6e3ebf;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.ul-li ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ul-li ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.ul-li-block ul {
+  margin: 0;
+  padding: 0;
+}
+
+.ul-li-block ul li {
+  list-style: none;
+  display: block;
+}
+
+div#Mars-preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background-color: #fff;
+  background: #fff url("../img/pre.svg") no-repeat center center;
+}
+
+[data-background] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+}
+
+.form-control:focus,
+button:visited,
+button.active,
+button:hover,
+button:focus,
+input:visited,
+input.active,
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+a:hover,
+a:focus,
+a:visited,
+a.active,
+select,
+select:hover,
+select:focus,
+select:visited {
+  outline: none;
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.form-control {
+  box-shadow: none;
+}
+
+.relative-position {
+  position: relative;
+}
+
+.pera-content p {
+  margin-bottom: 0;
+}
+
+@keyframes zooming {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.zooming {
+  animation: zooming 18s infinite both;
+}
+
+.Mars-headline h1,
+.Mars-headline h2,
+.Mars-headline h3,
+.Mars-headline h4,
+.Mars-headline h5,
+.Mars-headline h6 {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+.Mars-section-title span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ef4826;
+  padding: 0px 15px;
+  position: relative;
+}
+
+.Mars-section-title span:after,
+.Mars-section-title span:before {
+  width: 8px;
+  bottom: 3px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #ef4826;
+}
+
+.Mars-section-title span:before {
+  left: 0;
+}
+
+.Mars-section-title span:after {
+  right: 0;
+}
+
+.Mars-section-title h2 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.125;
+  padding: 15px 0px 20px;
+}
+
+.Mars-section-title.Mars-title-style-two {
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+.Mars-section-title.Mars-title-style-two span {
+  color: #ef4826;
+}
+
+.Mars-section-title.Mars-title-style-two span:after,
+.Mars-section-title.Mars-title-style-two span:before {
+  background-color: #ef4826;
+}
+
+.Mars-section-title.Mars-title-style-two .title-watermark {
+  left: 0;
+  right: 0;
+  top: -60px;
+  opacity: 0.04;
+  color: #53536c;
+  line-height: 1;
+  font-size: 100px;
+  font-weight: 900;
+  margin-bottom: 0;
+  text-align: center;
+  position: absolute;
+}
+
+.scrollup {
+  width: 45px;
+  right: 15px;
+  z-index: 5;
+  height: 45px;
+  bottom: 20px;
+  display: none;
+  position: fixed;
+  line-height: 45px;
+  background-color: #ef4826;
+}
+
+.scrollup i {
+  color: #fff;
+}
+
+.Mars-footer-widget .Mars-footer-logo-widget .footer-logo-btn,
+.Mars-newslatter-content .Mars-newslatter-form button,
+.Mars-registration-content-2 .registration-text-2 a,
+.Mars-registration-text-wrap a,
+.Mars-popular-course-section .Mars-popular-course-btn,
+.Mars-course-more-btn,
+.Mars-department-section .Mars-department-btn,
+.banner-search-select button,
+.Mars-banner-text .Mars-banner-btn a,
+.slider-main-item .slider-main-text .slider-main-btn a {
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.Mars-footer-widget .Mars-footer-logo-widget .footer-logo-btn:after,
+.Mars-newslatter-content .Mars-newslatter-form button:after,
+.Mars-registration-content-2 .registration-text-2 a:after,
+.Mars-registration-text-wrap a:after,
+.Mars-popular-course-section .Mars-popular-course-btn:after,
+.Mars-course-more-btn:after,
+.Mars-department-section .Mars-department-btn:after,
+.banner-search-select button:after,
+.Mars-banner-text .Mars-banner-btn a:after,
+.slider-main-item .slider-main-text .slider-main-btn a:after {
+  top: 0;
+  width: 0;
+  left: -40%;
+  content: "";
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  background-color: #ef4826;
+}
+
+.Mars-footer-widget .Mars-footer-logo-widget .footer-logo-btn:hover:after,
+.Mars-newslatter-content .Mars-newslatter-form button:hover:after,
+.Mars-registration-content-2 .registration-text-2 a:hover:after,
+.Mars-registration-text-wrap a:hover:after,
+.Mars-popular-course-section .Mars-popular-course-btn:hover:after,
+.Mars-course-more-btn:hover:after,
+.Mars-department-section .Mars-department-btn:hover:after,
+.banner-search-select button:hover:after,
+.Mars-banner-text .Mars-banner-btn a:hover:after,
+.slider-main-item .slider-main-text .slider-main-btn a:hover:after {
+  height: 100%;
+  width: 150%;
+}
+
+@keyframes animationFramesTwo {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+
+  20% {
+    transform: translate(73px, -1px) rotate(36deg) scale(0.9);
+  }
+
+  40% {
+    transform: translate(141px, 72px) rotate(72deg) scale(1);
+  }
+
+  60% {
+    transform: translate(83px, 122px) rotate(108deg) scale(1.2);
+  }
+
+  80% {
+    transform: translate(-40px, 72px) rotate(104deg) scale(1.1);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes animationFramesOne {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  20% {
+    transform: translate(73px, -1px) rotate(36deg);
+  }
+
+  40% {
+    transform: translate(111px, 72px) rotate(72deg);
+  }
+
+  60% {
+    transform: translate(93px, 122px) rotate(108deg);
+  }
+
+  80% {
+    transform: translate(-70px, 72px) rotate(124deg);
+  }
+
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
+/*---------------------------------------------------- */
+/*Header area*/
+/*----------------------------------------------------*/
+.Mars-header-main {
+  padding-top: 15px;
+}
+
+.Mars-header-top {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ececec;
+}
+
+.Mars-header-top-cta li {
+  padding-left: 65px;
+}
+
+.Mars-header-top-cta {
+  padding-top: 8px;
+}
+
+.Mars-header-top-cta li {
+  position: relative;
+}
+
+.Mars-header-top-cta li:after {
+  top: 15px;
+  left: 30px;
+  content: "";
+  width: 1px;
+  height: 33px;
+  position: absolute;
+  border: 1px dashed #dadada;
+}
+
+.Mars-header-top-cta li:nth-child(1):after {
+  display: none;
+}
+
+.header-top-cta-content .Mars-top-cta-icon {
+  top: 12px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.header-top-cta-content .Mars-top-cta-icon i {
+  font-size: 34px;
+  color: #ef4826;
+}
+
+.header-top-cta-content .Mars-top-cta-text a {
+  font-size: 13px;
+}
+
+.header-top-cta-content .Mars-top-cta-text h3 {
+  color: #000000;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.Mars-header-menu-wrap {
+  padding: 15px 0px 13px;
+}
+
+.Mars-main-navigation {
+  padding-top: 5px;
+}
+
+.Mars-main-navigation .navbar-nav {
+  display: inherit;
+}
+
+.Mars-main-navigation li {
+  margin-right: 75px;
+}
+
+.Mars-main-navigation li a {
+  color: #000000;
+  font-weight: 500;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.Mars-main-navigation li a:before {
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  height: 4px;
+  content: "";
+  width: 0%;
+  position: absolute;
+  background-color: #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-main-navigation li:hover a:before {
+  width: 100%;
+}
+
+.Mars-main-navigation .dropdown {
+  position: relative;
+}
+
+.Mars-main-navigation .dropdown:after {
+  top: -2px;
+  color: #ef4826;
+  right: -14px;
+  content: "+";
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-main-navigation .dropdown .dropdown-menu {
+  top: 65px;
+  right: 0;
+  opacity: 0;
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+  width: 200px;
+  border: none;
+  display: block;
+  border-radius: 0;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 2px solid #ef4826;
+  box-shadow: 0 5px 10px 0 rgba(83, 82, 82, 0.1);
+}
+
+.Mars-main-navigation .dropdown .dropdown-menu li {
+  width: 100%;
+  margin-left: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.Mars-main-navigation .dropdown .dropdown-menu li a {
+  width: 100%;
+  color: #343434;
+  display: block;
+  font-size: 14px;
+  padding: 10px 25px;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-main-navigation .dropdown .dropdown-menu li a:before {
+  display: none;
+}
+
+.Mars-main-navigation .dropdown .dropdown-menu li a:after {
+  left: 10px;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  transform: scale(0);
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-main-navigation .dropdown .dropdown-menu li a:hover {
+  background-color: #ef4826;
+  color: #fff;
+}
+
+.Mars-main-navigation .dropdown .dropdown-menu li a:hover:after {
+  transform: scale(1);
+}
+
+.Mars-main-navigation .dropdown .dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.Mars-main-navigation .dropdown:hover .dropdown-menu {
+  top: 48px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.Mars-header-cart-login {
+  padding-top: 5px;
+}
+
+.Mars-header-cart-login .Mars-top-cart-login {
+  position: relative;
+  display: inline-block;
+}
+
+.Mars-header-cart-login .Mars-top-cart-login:after {
+  top: 3px;
+  right: -3px;
+  width: 2px;
+  content: "";
+  height: 18px;
+  position: absolute;
+  background-color: #d9d9d9;
+}
+
+.Mars-header-cart-login .Mars-top-cart-login:last-child:after {
+  display: none;
+}
+
+.Mars-header-cart-login .Mars-top-cart-login button {
+  padding: 0;
+  border: none;
+  color: #5a5a5a;
+  margin: 0px 15px;
+  background-color: transparent;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-header-cart-login .Mars-top-cart-login button:hover {
+  color: #ef4826;
+}
+
+.yi-header-social {
+  margin-left: 40px;
+}
+
+.yi-header-social li {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.3s all ease-in-out;
+}
+
+.yi-header-social li a {
+  width: 100%;
+  display: block;
+}
+
+.yi-header-social li:hover {
+  color: #fff;
+  background-color: #ef4826;
+}
+
+.header-style-two {
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 20px 0px;
+  position: absolute;
+  background-color: #fff;
+}
+
+.header-style-two .Mars-brand-logo {
+  margin-right: 115px;
+}
+.Mars-brand-logo a img{
+  width: 100px;
+}
+
+.header-style-two .Mars-main-navigation {
+  padding-top: 15px;
+}
+
+.header-style-two .Mars-header-cart-login {
+  padding-top: 15px;
+}
+
+.header-style-two .Mars-main-navigation .dropdown:after {
+  color: #ff5520;
+}
+
+.header-style-two .Mars-main-navigation li a:before {
+  display: none;
+}
+
+.header-style-two .Mars-main-navigation li a:after {
+  top: 26px;
+  left: 25px;
+  width: 0px;
+  content: "";
+  height: 5px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+.header-style-two .Mars-main-navigation li {
+  position: relative;
+}
+
+.header-style-two .Mars-main-navigation li:before {
+  left: 0;
+  top: 30px;
+  width: 0px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  border-radius: 30%;
+  background-color: #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+.header-style-two .Mars-main-navigation li:hover:before {
+  width: 22px;
+}
+
+.header-style-two .Mars-main-navigation li:hover a:after {
+  width: 5px;
+}
+
+.header-style-two .Mars-main-navigation .dropdown .dropdown-menu li:before {
+  display: none;
+}
+
+.header-style-two .Mars-main-navigation .dropdown .dropdown-menu li a:after {
+  display: none;
+}
+
+.header-style-two .Mars-main-navigation .dropdown .dropdown-menu li a:hover {
+  background-color: #ef4826;
+}
+
+.header-style-two .Mars-main-navigation .dropdown:hover .dropdown-menu {
+  border-bottom: 2px solid #ef4826;
+}
+
+.Mars-sticky-menu {
+  top: -88px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  background: #fff;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-timing-function: ease;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+}
+
+.header-style-two.Mars-sticky-menu {
+  top: 0;
+}
+
+.header-style-three {
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding-top: 30px;
+  position: absolute;
+}
+
+.header-style-three .Mars-main-navigation {
+  padding-top: 15px;
+}
+
+.header-style-three .Mars-main-navigation li a {
+  color: #212121;
+}
+
+.header-style-three .Mars-main-navigation li a:before {
+  background-color: #ff5520;
+}
+
+.header-style-three .Mars-main-navigation .dropdown:after {
+  color: #ff5520;
+}
+
+.header-style-three .Mars-main-navigation .dropdown .dropdown-menu {
+  border-bottom: 2px solid #ff5520;
+}
+
+.header-style-three .Mars-main-navigation .dropdown .dropdown-menu li a:hover {
+  background-color: #ff5520;
+}
+
+.header-style-three .Mars-header-cart-login {
+  padding-top: 15px;
+}
+
+.header-style-three .Mars-header-cart-login .Mars-top-cart-login button {
+  color: #212121;
+}
+
+.header-style-three .Mars-header-cart-login .Mars-top-cart-login button:hover {
+  color: #ff5520;
+}
+
+.header-style-three.Mars-sticky-menu {
+  position: fixed;
+  padding: 15px 0px;
+  background-color: #212121;
+}
+.header-style-three.Mars-sticky-menu li a,
+.header-style-three.Mars-sticky-menu .Mars-header-cart-login .Mars-top-cart-login button {
+  color: #fff;
+}
+.header-style-three.Mars-sticky-menu .Mars-main-navigation,
+.header-style-three.Mars-sticky-menu .Mars-header-cart-login {
+  padding-top: 10px;
+}
+
+.header-style-four {
+  padding-top: 0;
+}
+
+.header-style-four .header-top {
+  padding: 10px 0px;
+  background-color: #07173a;
+}
+
+.header-style-four .header-top .header-top-cta span {
+  color: #bcc4d7;
+  font-size: 15px;
+  margin-right: 45px;
+}
+
+.header-style-four .header-top .header-top-cta span i {
+  color: #ff3614;
+  margin-right: 10px;
+}
+
+.header-style-four .header-top-social a {
+  color: #ffffff;
+  font-size: 15px;
+  margin-left: 12px;
+  transition: 0.3s all ease-in-out;
+}
+
+.header-style-four .header-top-social a:hover {
+  color: #ef4826;
+}
+
+.header-style-four .Mars-header-menu-wrap {
+  padding: 25px 0px;
+}
+
+.header-style-four .Mars-main-navigation {
+  padding-top: 15px;
+}
+
+.header-style-four .Mars-main-navigation .dropdown {
+  position: relative;
+}
+
+.header-style-four .Mars-main-navigation .dropdown:after {
+  top: -2px;
+  right: -14px;
+  content: "+";
+  color: #ff3614;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+}
+
+.header-style-four .Mars-main-navigation .dropdown .dropdown-menu {
+  top: 65px;
+  left: 0;
+  opacity: 0;
+  z-index: 2;
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+  width: 200px;
+  border: none;
+  display: block;
+  border-radius: 0;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+  background-color: #fff;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 2px solid #ff3614;
+  box-shadow: 0 5px 10px 0 rgba(83, 82, 82, 0.1);
+}
+
+.header-style-four .Mars-main-navigation .dropdown .dropdown-menu li {
+  width: 100%;
+  margin-left: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-style-four .Mars-main-navigation .dropdown .dropdown-menu li a {
+  width: 100%;
+  color: #343434;
+  display: block;
+  font-size: 14px;
+  padding: 10px 25px;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+
+.header-style-four .Mars-main-navigation .dropdown .dropdown-menu li a:before {
+  display: none;
+}
+
+.header-style-four .Mars-main-navigation .dropdown .dropdown-menu li a:after {
+  left: 10px;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  transform: scale(0);
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+.header-style-four .Mars-main-navigation .dropdown .dropdown-menu li a:hover {
+  background-color: #ff3614;
+  color: #fff;
+}
+
+.header-style-four .Mars-main-navigation .dropdown .dropdown-menu li a:hover:after {
+  transform: scale(1);
+}
+
+.header-style-four .Mars-main-navigation .dropdown .dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.header-style-four .Mars-main-navigation .dropdown:hover .dropdown-menu {
+  top: 48px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-style-four .Mars-main-navigation .dropdown:hover::after {
+  transform: rotate(130deg);
+}
+
+.header-style-four .Mars-main-navigation .navbar-nav {
+  display: inherit;
+}
+
+.header-style-four .Mars-main-navigation li {
+  margin-right: 0;
+  margin-left: 70px;
+}
+
+.header-style-four .Mars-main-navigation li a {
+  color: #000000;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.Mars-header-search {
+  margin-top: 15px;
+}
+
+.Mars-header-search button {
+  border: none;
+  color: #ff3614;
+  background-color: transparent;
+}
+
+.Mars-header-login-signup {
+  height: 50px;
+  width: 160px;
+  line-height: 45px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-left: 65px;
+}
+
+.Mars-header-login-signup button {
+  padding: 0;
+  width: 50%;
+  color: #000;
+  float: left;
+  border: none;
+  font-weight: 700;
+  border: 2px solid #eaeaea;
+  background-color: transparent;
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-header-login-signup button:hover {
+  color: #fff;
+  border: 2px solid #ff3614;
+  background-color: #ff3614;
+}
+
+.Mars-header-login-signup button:last-child {
+  border-left: none;
+}
+
+/*Search popup Page*/
+/*-------------------*/
+.search-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99999;
+  margin-top: -540px;
+  transform: translateY(-100%);
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 1500ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.search-popup:before {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 560px;
+  background-image: url(../img/waves-shape.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 0px;
+  content: "";
+}
+
+.search-active .search-popup {
+  transform: translateY(0%);
+  margin-top: 0;
+}
+
+.search-popup .close-search {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 75%;
+  margin: 0 auto;
+  margin-top: -200px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #ef4826;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  border: none;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.search-popup .close-search span {
+  position: relative;
+  display: block;
+  height: 70px;
+  font-size: 25px;
+  line-height: 65px;
+  color: #ffffff;
+}
+
+.search-active .search-popup .close-search {
+  visibility: visible;
+  opacity: 1;
+  top: 50%;
+  transition-delay: 1500ms;
+}
+
+.search-popup form {
+  position: absolute;
+  max-width: 700px;
+  top: 50%;
+  left: 15px;
+  right: 15px;
+  margin: -35px auto 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  background-color: #111111;
+  transition: all 300ms ease;
+}
+
+.search-active .search-popup form {
+  transform: scaleX(1);
+  transition-delay: 1200ms;
+}
+
+.search-popup .form-group {
+  position: relative;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.search-popup .form-group input[type=text],
+.search-popup .form-group input[type=search] {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 50px;
+  color: #000000;
+  height: 70px;
+  width: 100%;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  transition: all 500ms ease;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.search-popup .form-group input[type=submit],
+.search-popup .form-group button {
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  height: 70px;
+  line-height: 70px;
+  background: transparent;
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  transition: all 500ms ease;
+}
+
+.search-popup .form-group input[type=submit]:hover,
+.search-popup .form-group button:hover {
+  color: #000000;
+}
+
+.search-popup input::placeholder,
+.search-popup textarea::placeholder {
+  color: #000000;
+}
+
+.search-popup .close-search.style-two {
+  position: absolute;
+  right: 25px;
+  left: auto;
+  color: #ffffff;
+  width: auto;
+  height: auto;
+  top: 25px;
+  margin: 0px;
+  border: none;
+  background: none !important;
+  box-shadow: none !important;
+  transition: all 500ms ease;
+}
+
+.search-popup .close-search.style-two span {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+/*Mobile Menu area*/
+/*----------------------------------------------------*/
+.Mars-mobile_menu_content {
+  top: 0px;
+  bottom: 0;
+  right: -350px;
+  height: 100vh;
+  z-index: 101;
+  position: fixed;
+  width: 310px;
+  overflow-y: scroll;
+  background-color: #000;
+  padding: 50px 35px 35px 35px;
+  box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.19);
+  transition: all 0.5s ease-in;
+}
+
+.Mars-mobile_menu_content .Mars-mobile-main-navigation {
+  width: 100%;
+}
+
+.Mars-mobile_menu_content .Mars-mobile-main-navigation .navbar-nav {
+  width: 100%;
+}
+
+.Mars-mobile_menu_content .dropdown:after {
+  display: none;
+}
+
+.Mars-mobile_menu_content .navbar-nav .dropdown-menu {
+  position: static !important;
+  transform: none !important;
+}
+
+.Mars-mobile_menu_content .Mars-mobile-main-navigation .navbar-nav li {
+  width: 100%;
+  display: block;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-mobile_menu_content .Mars-mobile-main-navigation .navbar-nav li a {
+  padding: 0;
+  width: 100%;
+  color: #fff;
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 30px 10px 0;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(78, 78, 78, 0.41);
+}
+
+.Mars-mobile_menu_content .m-brand-logo {
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.Mars-mobile_menu_wrap.mobile_menu_on .Mars-mobile_menu_content {
+  right: 0px;
+  transition: all 0.7s ease-out;
+}
+
+.mobile_menu_overlay {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  right: 0%;
+  height: 120vh;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.5s ease-in-out;
+}
+
+.mobile_menu_overlay_on {
+  overflow: hidden;
+}
+
+.Mars-mobile_menu_wrap.mobile_menu_on .mobile_menu_overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Mars-mobile_menu_button {
+  right: 0;
+  top: 5px;
+  z-index: 5;
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  color: #ef4826;
+}
+
+.Mars-mobile_menu .Mars-mobile-main-navigation .navbar-nav li a:after {
+  display: none;
+}
+
+.Mars-mobile_menu .Mars-mobile-main-navigation .dropdown>.dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Mars-mobile_menu .Mars-mobile_menu_content .Mars-mobile-main-navigation .navbar-nav .dropdown-menu {
+  border: none;
+  display: none;
+  transition: none;
+  box-shadow: none;
+  padding: 5px 0px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.Mars-mobile_menu .Mars-mobile_menu_content .Mars-mobile-main-navigation .navbar-nav .dropdown-menu li {
+  border: none;
+  padding: 0 20px;
+  line-height: 1;
+}
+
+.Mars-mobile_menu .Mars-mobile_menu_content .Mars-mobile-main-navigation .navbar-nav .dropdown-menu li a:hover {
+  color: #ef4826;
+  background-color: transparent;
+}
+
+.Mars-mobile_menu .dropdown {
+  position: relative;
+}
+
+.Mars-mobile_menu .dropdown .dropdown-btn {
+  color: #9397a7;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  height: 30px;
+  padding: 5px 10px;
+}
+
+.Mars-mobile_menu .dropdown .dropdown-btn.toggle-open {
+  transform: rotate(90deg);
+}
+
+.Mars-mobile_menu .Mars-mobile_menu_close {
+  color: #d60606;
+  cursor: pointer;
+  top: 15px;
+  left: 15px;
+  font-size: 20px;
+  position: absolute;
+}
+
+.header-style-four.Mars-sticky-menu {
+  top: -46px;
+}
+
+@media screen and (max-width: 1024px) {
+  .header-style-four .Mars-main-navigation li {
+    margin-left: 40px;
+  }
+
+  .Mars-header-login-signup {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header-style-four .header-top {
+    display: none;
+  }
+
+  .header-style-four .Mars-main-navigation,
+  .Mars-header-option {
+    display: none;
+  }
+
+  .Mars-mobile_menu_button {
+    display: block;
+  }
+
+  .header-style-four .Mars-header-menu-wrap {
+    padding: 5px 0px;
+    display: block;
+  }
+
+  .header-style-four.Mars-sticky-menu {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header-style-four .header-top {
+    display: none;
+  }
+}
+
+/*---------------------------------------------------- */
+/*Slider area*/
+/*----------------------------------------------------*/
+.cd-headline.scale b {
+  opacity: 0;
+}
+
+.cd-words-wrapper {
+  position: relative;
+}
+
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+}
+
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+
+.no-js .cd-words-wrapper b {
+  opacity: 0;
+  font-weight: 700;
+}
+
+.no-js .cd-words-wrapper b.is-visible {
+  opacity: 1;
+}
+
+.cd-headline.scale i {
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0);
+  font-style: normal;
+}
+
+.is-visible .cd-headline.scale i {
+  opacity: 1;
+}
+
+.cd-headline.scale i.in {
+  animation: scale-up 0.6s forwards;
+}
+
+.cd-headline.scale i.out {
+  animation: scale-down 0.6s forwards;
+}
+
+.no-csstransitions .cd-headline.scale i {
+  transform: scale(1);
+  opacity: 0;
+}
+
+.no-csstransitions .cd-headline.scale .is-visible i {
+  opacity: 1;
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-down {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  60% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.slider-main-img,
+.slider-overlay {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slider-main-item {
+  z-index: 1;
+}
+
+.slider-main-item .slider-overlay {
+  background-color: black;
+  opacity: 0.051;
+}
+
+.slider-main-item .img-zooming {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: scale(1);
+}
+
+.slider-main-item .slider-main-text {
+  max-width: 620px;
+  padding: 115px 0px 125px;
+}
+
+.slider-main-item .slider-main-text span {
+  color: #000;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slider-main-item .slider-main-text h1 {
+  color: #000;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-bottom: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slider-main-item .slider-main-text p {
+  opacity: 0;
+  color: #4f4f4f;
+  font-size: 18px;
+  padding-bottom: 30px;
+  transform: translateY(50px);
+}
+
+.slider-main-item .slider-main-text .slider-main-btn {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.slider-main-item .slider-main-text .slider-main-btn a {
+  color: #fff;
+  height: 55px;
+  width: 150px;
+  float: left;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: center;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.slider-main-item .slider-main-text .slider-main-btn a i {
+  margin-right: 8px;
+}
+
+.slider-main-item .slider-main-text .slider-main-btn a:nth-child(1) {
+  background-color: #ef4826;
+}
+
+.slider-main-item .slider-main-text .slider-main-btn a:nth-child(2) {
+  background-color: #000;
+}
+
+#Mars-main-slider .owl-nav {
+  display: none;
+}
+
+#Mars-main-slider .owl-dots {
+  left: 13%;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+#Mars-main-slider .owl-dots .owl-dot {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  border: 2px solid #eaeaea;
+  transition: 0.3s all ease-in-out;
+}
+
+#Mars-main-slider .owl-dots .owl-dot:before {
+  top: 3px;
+  left: 3px;
+  width: 9px;
+  height: 9px;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  background-color: #000000;
+  transition: 0.3s all ease-in-out;
+}
+
+#Mars-main-slider .owl-dots .owl-dot.active {
+  border: 2px solid #000;
+}
+
+#Mars-main-slider .owl-dots .owl-dot.active:before {
+  background-color: #ef4826;
+}
+
+#Mars-main-slider .owl-item.active .img-zooming {
+  transform: scale(1.15);
+  transition: all 7000ms linear;
+}
+
+#Mars-main-slider .owl-item.active .slider-main-text span {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1500ms ease;
+  transition-delay: 900ms;
+}
+
+#Mars-main-slider .owl-item.active .slider-main-text h1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1500ms ease;
+  transition-delay: 1200ms;
+}
+
+#Mars-main-slider .owl-item.active .slider-main-text p {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1500ms ease;
+  transition-delay: 1500ms;
+}
+
+#Mars-main-slider .owl-item.active .slider-main-text .slider-main-btn {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1500ms ease;
+  transition-delay: 1800ms;
+}
+
+#Mars-main-slider-2 .owl-nav .owl-next,
+#Mars-main-slider-2 .owl-nav .owl-prev {
+  top: 50%;
+  opacity: 0;
+  width: 40px;
+  color: #fff;
+  height: 40px;
+  cursor: pointer;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  background-color: #ff5520;
+  transform: translateY(-50%);
+  transition: 0.4s all ease-in-out;
+}
+
+#Mars-main-slider-2 .owl-nav .owl-next {
+  right: 0px;
+}
+
+#Mars-main-slider-2 .owl-nav .owl-prev {
+  left: 0px;
+}
+
+#Mars-main-slider-2:hover .owl-next {
+  opacity: 1;
+  right: 30px;
+  visibility: visible;
+}
+
+#Mars-main-slider-2:hover .owl-prev {
+  opacity: 1;
+  left: 30px;
+  visibility: visible;
+}
+
+#Mars-slider-2
+{
+  background-image: url(../../assets/img/home-bg1.jpg);
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 130px 0 75px;
+  overflow: hidden;
+}
+#Mars-slider-2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: .77;
+}
+.slider-main-item-2 {
+  padding: 100px 0px;
+}
+
+#Mars-slider-2 .Mars-slider-section-2  .owl-stage-outer{
+  border-radius: 70px 0 70px 0;
+}
+
+.slider-main-item-2 .slider-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slider-main-item-2 .slider-main-text {
+  color: #fff;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.slider-main-item-2 .slider-main-text span {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.slider-main-item-2 .slider-main-text h1 {
+  font-size: 60px;
+  font-weight: 700;
+  padding-bottom: 70px;
+  text-transform: capitalize;
+}
+
+.slider-main-item-2 .slider-main-text a {
+  height: 60px;
+  width: 180px;
+  line-height: 60px;
+  border-radius: 5px;
+  font-weight: 700;
+  display: inline-block;
+  background-color: #ff5520;
+}
+
+.banner-water-mark {
+  left: 0;
+  bottom: -40px;
+  opacity: 0.05;
+  z-index: -1;
+  line-height: 1;
+  color: #00003d;
+  font-weight: 700;
+  font-size: 265px;
+  position: absolute;
+  font-family: "Fira Sans";
+}
+
+.Mars-banner-section {
+  padding-bottom: 132px;
+}
+
+.Mars-banner-section .banner-dot-square {
+  z-index: 1;
+}
+
+.Mars-banner-section .dot-square1 {
+  width: 7px;
+  height: 7px;
+  top: 200px;
+  left: 150px;
+  background-color: #00a4ff;
+  box-shadow: 0px 6px 13px 0px rgba(0, 0, 254, 0.25);
+  animation: animationFramesOne 12s infinite alternate;
+}
+
+.Mars-banner-section .dot-square2 {
+  top: 150px;
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.25);
+  animation: animationFramesTwo 18s infinite alternate;
+}
+
+.Mars-banner-section .dot-square3 {
+  bottom: 150px;
+  left: 150px;
+  width: 10px;
+  height: 10px;
+  background-color: #ff5520;
+  box-shadow: 0px 6px 13px 0px rgba(255, 85, 32, 0.25);
+  animation: animationFramesOne 12s infinite alternate;
+}
+
+.Mars-banner-section .dot-square4 {
+  width: 10px;
+  height: 10px;
+  right: 50%;
+  bottom: 200px;
+  background-color: #ef4826;
+  box-shadow: 0px 6px 13px 0px rgba(0, 0, 254, 0.25);
+  animation: animationFramesTwo 18s infinite alternate;
+}
+
+.Mars-banner-content {
+  background-color: #f7f7f7;
+}
+
+.Mars-banner-content .Mars-banner-img {
+  top: 90px;
+  right: -30px;
+  position: absolute;
+}
+
+.Mars-banner-content .b-deco-shape {
+  bottom: -74px;
+}
+
+.Mars-banner-text {
+  z-index: 1;
+  max-width: 690px;
+  overflow: hidden;
+  padding: 230px 0px 180px;
+}
+
+.Mars-banner-text .Mars-banner-tag {
+  padding-right: 30px;
+  border-radius: 40px;
+  display: inline-block;
+  margin-bottom: 45px;
+  background-color: #efeff0;
+}
+
+.Mars-banner-text .Mars-banner-tag span {
+  color: #fff;
+  font-weight: 500;
+  padding: 12px 30px;
+  margin-right: 10px;
+  border-radius: 40px;
+  display: inline-block;
+  background-color: #ef4826;
+}
+
+.Mars-banner-text .Mars-banner-tag p {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 0;
+  display: inline-block;
+}
+
+.Mars-banner-text h1 {
+  color: #000;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-bottom: 35px;
+}
+
+.Mars-banner-text h1 span {
+  color: #ef4826;
+}
+
+.Mars-banner-text p {
+  color: #4f4f4f;
+  font-size: 20px;
+  line-height: 1.6;
+  padding-bottom: 40px;
+}
+
+.Mars-banner-text .Mars-banner-btn {
+  float: left;
+  margin-right: 35px;
+}
+
+.Mars-banner-text .Mars-banner-btn a {
+  color: #fff;
+  width: 160px;
+  height: 55px;
+  display: block;
+  overflow: hidden;
+  font-weight: 700;
+  line-height: 55px;
+  border-radius: 40px;
+  background-color: #ff5520;
+}
+
+.Mars-banner-text .Mars-banner-btn a i {
+  margin-left: 5px;
+}
+
+.Mars-banner-text .Mars-banner-play {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  line-height: 50px;
+  border-radius: 100%;
+  transition: 0.3s all ease-in-out;
+  background-color: #ef4826;
+}
+
+.Mars-banner-text .Mars-banner-play a {
+  color: #fff;
+  width: 100%;
+  display: block;
+}
+
+.Mars-banner-text .Mars-banner-play:hover {
+  background-color: #ef4826;
+}
+
+.Mars-banner-text .Mars-banner-play .video_btn_border {
+  border: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.banner-search-select {
+  top: -175px;
+  z-index: 1;
+  position: relative;
+  margin-bottom: -175px;
+}
+
+.banner-search-select .banner-search-shape1 {
+  top: -70px;
+  left: -70px;
+  z-index: -1;
+}
+
+.banner-search-select .banner-search-shape2 {
+  bottom: -70px;
+  right: -70px;
+  z-index: -1;
+}
+
+.banner-search-select .banner-search-form {
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px 20px 12px;
+  box-shadow: 0px 6px 21px 0px rgba(0, 0, 0, 0.05);
+}
+
+.banner-search-select .Mars-select-option-wrap {
+  float: left;
+  margin-top: 5px;
+}
+
+.banner-search-select .banner-select-option {
+  width: 165px;
+  display: inline-block;
+}
+
+.banner-search-select .banner-select-option .nice-select {
+  color: #000;
+  border: none;
+  height: auto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: auto;
+  font-family: "Fira Sans";
+}
+
+.banner-search-select .banner-select-option .nice-select:after {
+  top: 0px;
+  right: 20px;
+  height: auto;
+  border: none;
+  margin-top: 0;
+  font-size: 12px;
+  content: "";
+  font-weight: 900;
+  transform: rotate(0);
+  font-family: "Font Awesome 5 Free";
+}
+
+.banner-search-select button {
+  color: #fff;
+  height: 45px;
+  width: 160px;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #ef4826;
+}
+
+.banner-search-select button:after {
+  background-color: #ff5520;
+}
+
+.banner-search-select button i {
+  margin-right: 5px;
+}
+
+.select-apply-btn {
+  margin-top: 20px;
+}
+
+.select-apply-btn p {
+  color: #000;
+  font-size: 15px;
+}
+
+.select-apply-btn p a {
+  font-weight: 700;
+  margin-left: 8px;
+  color: #ef4826;
+  text-decoration: underline;
+}
+
+@keyframes animateBubble {
+  0% {
+    margin-top: 20%;
+  }
+
+  100% {
+    margin-top: -30%;
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: 25px;
+  }
+}
+
+.slider-main-item-3 {
+  padding: 150px 0px 250px;
+}
+
+.slider-main-item-3 .slider-overlay {
+  background-color: rgba(7, 23, 58, 0.65);
+}
+
+.slider-main-item-3 .slider-main-img,
+.slider-main-item-3 .slider-overlay {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slider-main-item-3 .slider-main-text {
+  margin: 0 auto;
+  max-width: 810px;
+}
+
+.slider-main-item-3 .slider-main-text .shape-layer {
+  top: 100px;
+  right: 240px;
+}
+
+.slider-main-item-3 .slider-main-text span {
+  color: #ff3614;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.slider-main-item-3 .slider-main-text h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  padding: 10px 0px;
+}
+
+.slider-main-item-3 .slider-main-text p {
+  color: #e5e5e5;
+  margin: 0 auto;
+  font-size: 18px;
+  max-width: 450px;
+  margin-bottom: 35px;
+}
+
+.slider-main-item-3 .slider-main-text a {
+  color: #fff;
+  height: 55px;
+  width: 150px;
+  font-weight: 700;
+  line-height: 55px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #ff3614;
+  border: 2px solid #ff3614;
+  transition: 0.3s all ease-in-out;
+}
+
+.slider-main-item-3 .slider-main-text a:hover {
+  border: 2px solid #ff3614;
+  background-color: transparent;
+}
+
+#Mars-main-slider-3 .owl-nav .owl-next,
+#Mars-main-slider-3 .owl-nav .owl-prev {
+  top: 50%;
+  opacity: 0;
+  width: 40px;
+  color: #fff;
+  height: 40px;
+  cursor: pointer;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  background-color: #ef4826;
+  transform: translateY(-50%);
+  transition: 0.4s all ease-in-out;
+}
+
+#Mars-main-slider-3 .owl-nav .owl-next {
+  right: 0px;
+}
+
+#Mars-main-slider-3 .owl-nav .owl-prev {
+  left: 0px;
+}
+
+#Mars-main-slider-3:hover .owl-next {
+  opacity: 1;
+  right: 30px;
+  visibility: visible;
+}
+
+#Mars-main-slider-3:hover .owl-prev {
+  opacity: 1;
+  left: 30px;
+  visibility: visible;
+}
+
+.slider-section-4 .bubble-dotted {
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none;
+}
+
+.slider-section-4 .bubble-dotted .dotted {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.slider-section-4 .bubble-dotted .dotted-1 {
+  width: 11px;
+  height: 11px;
+  left: 100px;
+  top: 50%;
+  animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+
+.slider-section-4 .bubble-dotted .dotted-2 {
+  width: 7px;
+  height: 7px;
+  left: 240px;
+  top: 40%;
+  animation: animateBubble 10s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.slider-section-4 .bubble-dotted .dotted-3 {
+  width: 11px;
+  height: 11px;
+  left: 460px;
+  top: 30%;
+  animation: animateBubble 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+
+.slider-section-4 .bubble-dotted .dotted-4 {
+  width: 16px;
+  height: 16px;
+  left: 430px;
+  top: 90%;
+  animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+}
+
+.slider-section-4 .bubble-dotted .dotted-5 {
+  width: 6px;
+  height: 6px;
+  left: 50%;
+  top: 50%;
+  animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.slider-section-4 .bubble-dotted .dotted-6 {
+  width: 9px;
+  height: 9px;
+  left: 70%;
+  top: 230px;
+  animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+
+.slider-section-4 .bubble-dotted .dotted-7 {
+  width: 6px;
+  height: 6px;
+  left: 65%;
+  top: 30%;
+  animation: animateBubble 10s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+
+.slider-section-4 .bubble-dotted .dotted-8 {
+  width: 6px;
+  height: 6px;
+  left: 85%;
+  top: 35%;
+  animation: animateBubble 12s linear infinite, sideWays 3s ease-in-out infinite alternate;
+}
+
+.slider-section-4 .bubble-dotted .dotted-9 {
+  width: 13px;
+  height: 13px;
+  left: 90%;
+  top: 40%;
+  animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.slider-section-4 .bubble-dotted .dotted-10 {
+  width: 12px;
+  height: 12px;
+  left: 80%;
+  top: 70%;
+  animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+
+.slider-section-4 .bubble-dotted .dotted {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.slider-section-4 .bubble-dotted .dotted-1 {
+  width: 6px;
+  height: 6px;
+  left: 270px;
+  top: 100px;
+  background: #ff3614;
+}
+
+.slider-section-4 .bubble-dotted .dotted-2 {
+  width: 6px;
+  height: 6px;
+  left: 190px;
+  top: 210px;
+}
+
+.slider-section-4 .bubble-dotted .dotted-3 {
+  width: 11px;
+  height: 11px;
+  left: 150px;
+  top: 90%;
+  background: #ff3614;
+}
+
+.slider-section-4 .bubble-dotted .dotted-4 {
+  width: 11px;
+  height: 11px;
+  left: 25%;
+  top: 100px;
+}
+
+.slider-section-4 .bubble-dotted .dotted-5 {
+  width: 11px;
+  height: 11px;
+  left: 45%;
+  top: 60px;
+  background: #ff3614;
+}
+
+.slider-section-4 .bubble-dotted .dotted-6 {
+  width: 6px;
+  height: 6px;
+  left: 50%;
+  top: 370px;
+}
+
+.slider-section-4 .bubble-dotted .dotted-7 {
+  width: 9px;
+  height: 9px;
+  left: 75%;
+  top: 25px;
+  background: #ff3614;
+}
+
+.slider-section-4 .bubble-dotted .dotted-8 {
+  width: 8px;
+  height: 8px;
+  left: 77%;
+  top: 170px;
+}
+
+.slider-section-4 .bubble-dotted .dotted-9 {
+  width: 6px;
+  height: 6px;
+  left: 85%;
+  top: 50%;
+  background: #ff3614;
+}
+
+.slider-section-4 .bubble-dotted .dotted-10 {
+  width: 6px;
+  height: 6px;
+  left: 90%;
+  top: 80%;
+}
+
+@media screen and (max-width: 767px) {
+  .slider-main-item-3 .slider-main-text h1 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .slider-main-item-3 .slider-main-text h1 {
+    font-size: 30px;
+  }
+
+  .slider-main-item-3 .slider-main-text p {
+    font-size: 16px;
+  }
+
+  .slider-main-item-3 .slider-main-text a {
+    height: 45px;
+    line-height: 45px;
+  }
+
+  .slider-main-item-3 {
+    padding: 100px 0px 150px;
+  }
+}
+
+/*---------------------------------------------------- */
+/*Feature area*/
+/*----------------------------------------------------*/
+.Mars-feature-section {
+  padding: 100px 0px;
+}
+
+.Mars-feature-innerbox {
+  z-index: 1;
+  padding: 35px 25px;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
+}
+
+.Mars-feature-innerbox:after {
+  top: 0;
+  left: 0;
+  width: 0;
+  z-index: -1;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  transition: all 500ms ease-in-out;
+}
+
+.Mars-feature-innerbox .Mars-feature-icon {
+  line-height: 1;
+  margin-right: 15px;
+}
+
+.Mars-feature-innerbox .Mars-feature-icon i {
+  font-size: 45px;
+  color: #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-feature-innerbox .Mars-feature-text {
+  overflow: hidden;
+}
+
+.Mars-feature-innerbox .Mars-feature-text h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 10px;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-feature-innerbox .Mars-feature-text p {
+  font-size: 15px;
+  color: #555555;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-feature-innerbox:hover {
+  transform: translateY(-15px);
+}
+
+.Mars-feature-innerbox:hover:after {
+  width: 100%;
+}
+
+.Mars-feature-innerbox:hover .Mars-feature-icon i {
+  color: #fff;
+}
+
+.Mars-feature-innerbox:hover .Mars-feature-text h3,
+.Mars-feature-innerbox:hover .Mars-feature-text p {
+  color: #fff;
+}
+
+/*---------------------------------------------------- */
+/*About area*/
+/*----------------------------------------------------*/
+@keyframes border_animation {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  20% {
+    transform: scale(1.24);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+.Mars-about-section {
+  padding-bottom: 100px;
+}
+
+.Mars-about-text p {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.Mars-about-video-area {
+  padding-top: 40px;
+}
+
+.Mars-about-video-area .Mars-about-video-tag {
+  top: 0;
+  left: 0;
+  color: #fff;
+  width: 140px;
+  line-height: 1;
+  padding: 13px 20px 10px;
+  height: 140px;
+  position: absolute;
+  border: 15px solid #fff;
+  background-color: #ef4826;
+}
+
+.Mars-about-video-area .Mars-about-video-tag h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.Mars-about-video-area .Mars-about-video-tag i {
+  font-size: 24px;
+}
+
+.Mars-about-video-area .Mars-about-video-tag span {
+  margin-top: 5px;
+  display: block;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.Mars-about-video-area .Mars-video-play-btn {
+  left: 0;
+  top: 60%;
+  right: 0;
+  width: 85px;
+  color: #000;
+  height: 85px;
+  margin: 0 auto;
+  line-height: 85px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+.video_btn_border {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  position: absolute;
+  animation-play-state: running;
+  border: 2px solid rgba(255, 255, 255, 0.32);
+  animation: border_animation 3.9s linear 0s infinite;
+}
+
+.video_btn_border.border_wrap-2 {
+  animation-delay: 1.3s;
+}
+
+.video_btn_border.border_wrap-3 {
+  animation-delay: 2.6s;
+}
+
+.Mars-about-text-area-content {
+  padding-top: 50px;
+}
+
+.Mars-about-qoute {
+  width: 100%;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 12px 0px 12px 25px;
+  border-left: 4px solid #ef4826;
+}
+
+.Mars-about-qoute span {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.Mars-about-qoute .Mars-quote-author {
+  margin-top: 10px;
+}
+
+.Mars-about-qoute .Mars-quote-author h4 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+  padding-left: 15px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.Mars-about-qoute .Mars-quote-author h4:before {
+  left: 0;
+  width: 6px;
+  top: 10px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #000;
+}
+
+.Mars-about-qoute .Mars-quote-author span {
+  color: #747474;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/*About Page area*/
+/*-------------------------*/
+.about-page-about-section {
+  padding: 110px 0px;
+}
+
+.about-page-about-img {
+  padding-left: 90px;
+}
+
+.about-page-about-text {
+  padding-top: 15px;
+}
+
+.about-page-about-text .Mars-section-title .title-watermark {
+  text-align: left;
+}
+
+.about-page-about-text .about-page-about-text-wrap {
+  max-width: 500px;
+  line-height: 1.625;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e6e9f2;
+}
+
+.about-page-about-text .about-page-about-video .ab-page-video-area {
+  width: 150px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+.about-page-about-text .about-page-about-video .ab-page-video-area a {
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  margin: 0 auto;
+  line-height: 42px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #000;
+  border: 4px solid #fff;
+  transform: translateY(-50%);
+}
+
+.about-page-about-text .about-page-about-video .ab-page-video-text {
+  padding-top: 8px;
+  max-width: 280px;
+  display: inline-block;
+}
+
+.about-page-about-text .about-page-about-video .ab-page-video-text h3 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.about-page-about-text .about-page-about-video .ab-page-video-text p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about-page-service-section {
+  background-color: #e7e8e9;
+  padding: 110px 0px;
+}
+
+.about-page-service-section .Mars-section-title .title-watermark {
+  color: #fff;
+  opacity: 1;
+}
+
+.about-page-service-section .Mars-feature-content {
+  padding-top: 35px;
+}
+
+.about-page-service-section .Mars-feature-innerbox {
+  background-color: #fff;
+}
+
+.about-page-service-section .Mars-feature-innerbox .Mars-feature-icon i {
+  color: #ef4826;
+}
+
+.about-page-service-section .Mars-feature-innerbox:hover .Mars-feature-icon i {
+  color: #ff5520;
+}
+
+.Mars-registration-section-3 {
+  overflow: visible;
+}
+
+@media screen and (max-width: 991px) {
+  .about-page-about-img {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .about-page-about-text {
+    margin: 0 auto;
+    max-width: 570px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .about-page-about-section,
+  .about-page-service-section {
+    padding: 60px 0px;
+  }
+}
+
+/*---------------------------------------------------- */
+/*Department area*/
+/*----------------------------------------------------*/
+.Mars-department-section {
+  padding: 95px 0px 100px;
+  background-color: #f9f8f8;
+}
+
+.Mars-department-section .Mars-department-content {
+  padding-top: 35px;
+}
+
+.Mars-department-section .Mars-department-btn {
+  height: 50px;
+  width: 170px;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  background-color: #ef4826;
+}
+
+.Mars-department-section .Mars-department-btn:hover i {
+  margin-left: 5px;
+}
+
+.Mars-department-section .Mars-department-btn:after {
+  background-color: #000;
+}
+
+.Mars-department-section .Mars-department-btn a {
+  width: 100%;
+  display: block;
+}
+
+.Mars-department-section .Mars-department-btn a i {
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-department-innerbox {
+  z-index: 1;
+  overflow: hidden;
+  border: 15px solid #fff;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 0px 43px 0px rgba(12, 12, 12, 0.16);
+}
+
+.Mars-department-innerbox:after {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+  background: linear-gradient(to bottom, rgba(21, 37, 65, 0.23) 0%, rgba(0, 1, 4, 0.88) 75%);
+}
+
+.Mars-department-innerbox:before {
+  left: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  content: "";
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  background-color: #000;
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-department-innerbox .Mars-department-text-icon {
+  left: 45px;
+  z-index: 3;
+  opacity: 1;
+  bottom: 45px;
+  position: absolute;
+  visibility: visible;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-department-innerbox .Mars-department-text-icon .Mars-department-icon {
+  line-height: 1;
+  margin-right: 15px;
+}
+
+.Mars-department-innerbox .Mars-department-text-icon .Mars-department-icon i {
+  font-size: 50px;
+  color: #ef4826;
+}
+
+.Mars-department-innerbox .Mars-department-text-icon .Mars-department-text {
+  overflow: hidden;
+}
+
+.Mars-department-innerbox .Mars-department-text-icon .Mars-department-text h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.Mars-department-innerbox .Mars-department-text-icon .Mars-department-text span {
+  color: #fff;
+}
+
+.Mars-department-innerbox .Mars-department-hover-text {
+  top: 40%;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transform: translateY(-50%);
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-department-innerbox .Mars-department-hover-text .Mars-department-icon {
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.Mars-department-innerbox .Mars-department-hover-text .Mars-department-icon i {
+  font-size: 50px;
+  color: #ef4826;
+}
+
+.Mars-department-innerbox .Mars-department-hover-text .Mars-department-text {
+  overflow: hidden;
+}
+
+.Mars-department-innerbox .Mars-department-hover-text .Mars-department-text h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.Mars-department-innerbox .Mars-department-hover-text .Mars-department-text span {
+  color: #fff;
+}
+
+.Mars-department-innerbox .Mars-department-more-btn {
+  right: 40px;
+  z-index: 2;
+  bottom: 0px;
+  opacity: 0;
+  line-height: 1;
+  visibility: hidden;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-department-innerbox .Mars-department-more-btn a {
+  color: #fff;
+  font-size: 30px;
+}
+
+.Mars-department-innerbox:hover {
+  border: 15px solid #000;
+  transform: translateY(-25px);
+}
+
+.Mars-department-innerbox:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Mars-department-innerbox:hover .Mars-department-text-icon {
+  left: 20px;
+  opacity: 0;
+  line-height: 1;
+  visibility: hidden;
+}
+
+.Mars-department-innerbox:hover .Mars-department-hover-text {
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.Mars-department-innerbox:hover .Mars-department-more-btn {
+  right: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+#Mars-department-slider-id .owl-stage-outer {
+  overflow: visible;
+}
+
+#Mars-department-slider-id .owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+#Mars-department-slider-id .owl-item.active {
+  opacity: 1;
+}
+
+#Mars-department-slider-id .owl-nav {
+  right: 0;
+  top: -110px;
+  position: absolute;
+}
+
+#Mars-department-slider-id .owl-nav .owl-next,
+#Mars-department-slider-id .owl-nav .owl-prev {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  line-height: 60px;
+  margin-left: 12px;
+  text-align: center;
+  border-radius: 100%;
+  display: inline-block;
+  border: 2px solid #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+#Mars-department-slider-id .owl-nav .owl-next:hover,
+#Mars-department-slider-id .owl-nav .owl-prev:hover {
+  color: #fff;
+  background-color: #ef4826;
+}
+
+/*---------------------------------------------------- */
+/*Testimonial area*/
+/*----------------------------------------------------*/
+.Mars-testimonial-section {
+  padding: 95px 0px 85px;
+}
+
+.Mars-testimonial-content {
+  padding-top: 15px;
+}
+
+.Mars-testimonial-item-wrap p {
+  color: #353535;
+  font-size: 17px;
+  line-height: 1.647;
+}
+
+.Mars-testimonial-item-wrap .Mars-testimonial-author {
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.Mars-testimonial-item-wrap .Mars-testimonial-author .Mars-testimonial-pic {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  margin-right: 15px;
+  border-radius: 100%;
+  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.28);
+}
+
+.Mars-testimonial-item-wrap .Mars-testimonial-author .Mars-testimonial-text {
+  overflow: hidden;
+  margin-top: 3px;
+  display: inline-block;
+}
+
+.Mars-testimonial-item-wrap .Mars-testimonial-author .Mars-testimonial-text .Mars-testimonial-rate {
+  margin-bottom: 3px;
+}
+
+.Mars-testimonial-item-wrap .Mars-testimonial-author .Mars-testimonial-text .Mars-testimonial-rate ul li {
+  color: #ffc601;
+  font-size: 13px;
+  margin-right: 2px;
+}
+
+.Mars-testimonial-item-wrap .Mars-testimonial-author .Mars-testimonial-text h4 {
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+  padding-left: 10px;
+  position: relative;
+}
+
+.Mars-testimonial-item-wrap .Mars-testimonial-author .Mars-testimonial-text h4:after {
+  top: 8px;
+  left: 0;
+  width: 5px;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #000;
+}
+
+.Mars-testimonial-item-wrap .Mars-testimonial-author .Mars-testimonial-text span {
+  color: #6e6e6e;
+  font-size: 17px;
+}
+
+#Mars-testimonial-slide .owl-nav {
+  display: none;
+}
+
+#Mars-testimonial-slide .owl-dots {
+  right: 0;
+  bottom: 5px;
+  position: absolute;
+}
+
+#Mars-testimonial-slide .owl-dots .owl-dot {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 5px;
+  border-radius: 100%;
+  position: relative;
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+#Mars-testimonial-slide .owl-dots .owl-dot:before {
+  top: 2px;
+  left: 2px;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #d4d4d4;
+  transition: 0.4s all ease-in-out;
+}
+
+#Mars-testimonial-slide .owl-dots .owl-dot.active {
+  border: 2px solid #000;
+}
+
+#Mars-testimonial-slide .owl-dots .owl-dot.active:before {
+  background-color: #ef4826;
+}
+
+/*Testimonial section 2*/
+/*-----------------------------*/
+.Mars-testimonial-section-2 {
+  padding: 105px 0px 100px;
+}
+
+.Mars-testimonial-img-text-2 {
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 40px 30px 25px;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 12px 35px 0px rgba(12, 12, 12, 0.06);
+}
+
+.Mars-testimonial-img-text-2 .Mars-testimonial-icon-2 {
+  top: 15px;
+  right: 15px;
+  position: absolute;
+}
+
+.Mars-testimonial-img-text-2 .Mars-testimonial-icon-2 i {
+  color: #efefef;
+  line-height: 1;
+  font-size: 30px;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-testimonial-img-text-2 .Mars-testimonial-text-2 h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ef4826;
+  padding-bottom: 15px;
+}
+
+.Mars-testimonial-img-text-2 .Mars-testimonial-text-2 p {
+  color: #666666;
+}
+
+.Mars-testimonial-img-text-2 .Mars-testimonial-author-2 {
+  margin-top: 20px;
+}
+
+.Mars-testimonial-img-text-2 .Mars-testimonial-author-2 .Mars-testi-author-img-2 {
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+  margin-right: 12px;
+  border-radius: 100%;
+}
+
+.Mars-testimonial-img-text-2 .Mars-testimonial-author-2 .Mars-testi-author-img-2:before {
+  top: 0;
+  left: 0;
+  width: 65px;
+  content: "";
+  z-index: 1;
+  height: 65px;
+  border-radius: 100%;
+  position: absolute;
+  border: 3px solid #ef4826;
+}
+
+.Mars-testimonial-img-text-2 .Mars-testimonial-author-2 .Mars-testi-author-img-2:after {
+  top: 3px;
+  left: 3px;
+  width: 60px;
+  content: "";
+  height: 60px;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #fff;
+}
+
+.Mars-testimonial-img-text-2 .Mars-testimonial-author-2 .Mars-testi-author-text-2 {
+  display: block;
+  padding-top: 10px;
+}
+
+.Mars-testimonial-img-text-2 .Mars-testimonial-author-2 .Mars-testi-author-text-2 h4 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Mars-testimonial-img-text-2 .Mars-testimonial-author-2 .Mars-testi-author-text-2 span {
+  color: #888888;
+  font-size: 14px;
+}
+
+.Mars-testimonial-img-text-2:hover {
+  transform: translateY(-25px);
+  box-shadow: 0px 36px 35px 0px rgba(12, 12, 12, 0.1);
+}
+
+.Mars-testimonial-img-text-2:hover .Mars-testimonial-icon-2 i {
+  color: #ff5520;
+}
+
+.Mars-testimonial-wrap-2 {
+  margin-top: 40px;
+}
+
+.Mars-testimonial-wrap-2 .owl-nav {
+  display: none;
+}
+
+.Mars-testimonial-wrap-2 .owl-stage-outer {
+  overflow: visible;
+}
+
+.Mars-testimonial-wrap-2 .owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.Mars-testimonial-wrap-2 .owl-item.active {
+  opacity: 1;
+}
+
+.Mars-testimonial-wrap-2 .owl-dots {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.Mars-testimonial-wrap-2 .owl-dots .owl-dot {
+  width: 28px;
+  height: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+  border-radius: 30%;
+  display: inline-block;
+  background-color: #ececed;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-testimonial-wrap-2 .owl-dots .owl-dot.active {
+  width: 38px;
+  background-color: #ef4826;
+}
+
+.Mars-testimonial-section-3 {
+  padding: 120px 0px;
+  background-color: #f9f8f8;
+}
+
+.testimonial-slider-3 .owl-nav {
+  display: none;
+}
+
+.testimonial-slider-3 .owl-stage-outer {
+  overflow: visible;
+}
+
+.testimonial-slider-3 .owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.testimonial-slider-3 .owl-item.active {
+  opacity: 1;
+}
+
+.testimonial-slider-3 .owl-dots {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.testimonial-slider-3 .owl-dots .owl-dot {
+  width: 165px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 30px;
+  display: inline-block;
+  background-color: #ffffff;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 9px 21px 0px rgba(12, 12, 12, 0.05);
+}
+
+.testimonial-slider-3 .owl-dots .owl-dot.active {
+  width: 165px;
+  background-color: #ff3614;
+}
+
+@media screen and (max-width: 420px) {
+  .Mars-testimonial-section-3 {
+    padding: 50px 0px;
+  }
+
+  .testimonial-slider-3 .owl-dots .owl-dot.active,
+  .testimonial-slider-3 .owl-dots .owl-dot {
+    width: 20px;
+  }
+}
+
+/*---------------------------------------------------- */
+/*Course area*/
+/*----------------------------------------------------*/
+@keyframes toBottomFromTop {
+  49% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
+}
+
+@keyframes toTopFromBottom {
+  49% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
+}
+
+@keyframes toBottomFromTop {
+  49% {
+    transform: translateY(100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
+}
+
+@keyframes toLeftFromRight {
+  49% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  51% {
+    opacity: 1;
+  }
+}
+
+.Mars-course-section {
+  padding: 95px 0px;
+  background-color: #f9f8f8;
+}
+
+.Mars-course-more-btn {
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-weight: 700;
+  line-height: 50px;
+  background: #ef4826;
+}
+
+.Mars-course-more-btn:after {
+  background-color: #000;
+}
+
+.Mars-course-more-btn i {
+  margin-left: 5px;
+}
+
+.Mars-course-more-btn a {
+  width: 100%;
+  display: block;
+}
+
+.Mars-course-top {
+  margin-bottom: 25px;
+}
+
+.Mars-course-top .Mars-section-title {
+  padding-left: 60px;
+}
+
+.Mars-course-top .Mars-course-title-text {
+  margin-top: 30px;
+  padding-left: 40px;
+}
+
+.Mars-course-top .Mars-course-title-text span {
+  color: #353535;
+  font-size: 17px;
+}
+
+.Mars-course-filter-wrap .filtr-container-area {
+  margin: 0 -15px;
+}
+
+.Mars-course-filter-wrap .Mars-course-filter-btn {
+  margin-bottom: 10px;
+}
+
+.Mars-course-filter-wrap .Mars-course-filter-btn button {
+  color: #000;
+  font-weight: 700;
+  margin: 0px 10px;
+  padding: 5px 15px;
+  border: 1px solid #e7e6e6;
+  background-color: transparent;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-course-filter-wrap .Mars-course-filter-btn button.is-checked {
+  color: #fff;
+  border: 1px solid #ef4826;
+  background-color: #ef4826;
+}
+
+.Mars-course-filter-wrap .grid-size-25 {
+  width: 25%;
+}
+
+.Mars-course-filter-wrap .grid-sizer {
+  width: 25%;
+}
+
+.Mars-course-filter-wrap .grid-item {
+  float: left;
+  padding: 15px;
+  display: inline-block;
+}
+
+.Mars-course-img-text {
+  padding: 18px;
+  margin-bottom: 5px;
+  box-shadow: 0px 14px 29px 0px rgba(12, 12, 12, 0.08);
+}
+
+.Mars-course-img-text .Mars-course-img {
+  overflow: hidden;
+}
+
+.Mars-course-img-text .Mars-course-img img {
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-course-img-text .Mars-course-img:before {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  z-index: 1;
+  height: 100%;
+  visibility: hidden;
+  position: absolute;
+  transform: scale(0.5);
+  transition: 0.4s all ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Mars-course-img-text .Mars-course-img .c-price-tag {
+  top: 10px;
+  color: #fff;
+  right: 10px;
+  z-index: 1;
+  font-weight: 700;
+  padding: 2px 15px;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #ef4826;
+}
+
+.Mars-course-img-text .Mars-course-img .c-hover-icon {
+  left: 0;
+  top: 40%;
+  right: 0;
+  opacity: 0;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  visibility: hidden;
+  text-align: center;
+  position: absolute;
+  border-radius: 100%;
+  display: inline-block;
+  transform: translateY(-50%);
+  transition: 0.3s all ease-in-out;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.Mars-course-img-text .Mars-course-img .c-hover-icon i {
+  font-size: 14px;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-course-img-text .Mars-course-img .c-hover-icon:hover i {
+  transform: rotate(130deg);
+}
+
+.Mars-course-img-text .Mars-course-text {
+  margin-top: 10px;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-course-meta {
+  margin-bottom: 12px;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-course-meta a {
+  font-size: 14px;
+  margin-right: 35px;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-course-meta a i {
+  margin-right: 5px;
+  color: #ef4826;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-course-meta a:last-child {
+  margin-right: 0;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-course-tilte-head {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-course-tilte-head h3 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.556;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-course-tilte-head h3:hover {
+  color: #ef4826;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-course-tilte-head ul {
+  display: inline-block;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-course-tilte-head ul li {
+  color: #ffc601;
+  font-size: 13px;
+  margin-right: 2px;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-course-tilte-head span {
+  font-size: 14px;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-c-mentor-text h4 {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-c-mentor-text span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.Mars-course-img-text .Mars-course-text .Mars-c-mentor-img {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.Mars-course-img-text:hover .Mars-course-img:before {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.Mars-course-img-text:hover .Mars-course-img img {
+  transform: scale(1.2);
+}
+
+.Mars-course-img-text:hover .Mars-course-img .c-hover-icon {
+  top: 50%;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*Popular course  area*/
+/*-----------------------------*/
+.Mars-popular-course-section {
+  padding: 105px 0px 50px;
+  background-color: #f7f7f7;
+}
+
+.Mars-popular-course-section .Mars-popular-course-content {
+  margin-top: 25px;
+}
+
+.Mars-popular-course-section .Mars-section-title .title-watermark {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.Mars-popular-course-section .Mars-popular-course-btn {
+  color: #fff;
+  height: 50px;
+  width: 170px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 50px;
+  overflow: hidden;
+  border-radius: 40px;
+  background-color: #ef4826;
+}
+
+.Mars-popular-course-section .Mars-popular-course-btn:after {
+  background-color: #ff5520;
+}
+
+.Mars-popular-course-section .Mars-popular-course-btn i {
+  margin-left: 5px;
+}
+
+.Mars-popular-course-section .Mars-popular-course-btn:hover i {
+  animation: toBottomFromTop 0.3s forwards;
+}
+
+.Mars-popular-course-img-text {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.04);
+}
+
+.Mars-popular-course-img-text .Mars-popular-course-img {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.Mars-popular-course-img-text .Mars-popular-course-img img {
+  transition: 0.5s all ease-in-out;
+}
+
+.Mars-popular-course-img-text .popular-course-fee {
+  margin: 10px 0px;
+}
+
+.Mars-popular-course-img-text .popular-course-fee .course-fee-amount {
+  float: right;
+}
+
+.Mars-popular-course-img-text .popular-course-fee span {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.Mars-popular-course-img-text .popular-course-fee span,
+.Mars-popular-course-img-text .popular-course-fee del {
+  color: #555555;
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.Mars-popular-course-img-text .popular-course-fee strong {
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.Mars-popular-course-img-text .popular-course-title {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e9e9e9;
+}
+
+.Mars-popular-course-img-text .popular-course-title h3 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.444;
+  padding-bottom: 8px;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-popular-course-img-text .popular-course-title .Mars-course-meta a {
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+.Mars-popular-course-img-text .popular-course-title .Mars-course-meta a:last-child {
+  margin-right: 0;
+  float: right;
+}
+
+.Mars-popular-course-img-text .popular-course-title .Mars-course-meta a i {
+  margin-right: 5px;
+  color: #ef4826;
+}
+
+.Mars-popular-course-img-text .popular-course-rate ul {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.Mars-popular-course-img-text .popular-course-rate ul li {
+  color: #ffc601;
+  font-size: 13px;
+}
+
+.Mars-popular-course-img-text .popular-course-rate span {
+  font-size: 14px;
+}
+
+.Mars-popular-course-img-text .popular-course-rate .p-rate-vote {
+  margin-top: 3px;
+}
+
+.Mars-popular-course-img-text .popular-course-rate .p-course-btn {
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-popular-course-img-text .popular-course-rate .p-course-btn a {
+  color: #fff;
+  width: 100%;
+  display: block;
+  font-size: 14px;
+}
+
+.Mars-popular-course-img-text:hover {
+  box-shadow: -3.285px 20.741px 51px 0px rgba(0, 0, 47, 0.2);
+}
+
+.Mars-popular-course-img-text:hover .popular-course-title h3 {
+  color: #ff5520;
+}
+
+.Mars-popular-course-img-text:hover .p-course-btn {
+  background-color: #ff5520;
+}
+
+.Mars-popular-course-img-text:hover .p-course-btn i {
+  animation: toBottomFromTop 0.3s forwards;
+}
+
+.Mars-popular-course-img-text:hover .Mars-popular-course-img img {
+  transform: scale(1.1);
+}
+
+/*Course Page  area*/
+/*-----------------------------*/
+.course-page-course-section {
+  padding: 100px 0px;
+  background-color: #f2f2f4;
+}
+
+.course-page-course-content-top {
+  margin-bottom: 70px;
+}
+
+.course-page-course-content-top .course-grid-top-bar {
+  height: 60px;
+  line-height: 60px;
+  border-radius: 3px;
+  padding-left: 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 35px 0px rgba(12, 12, 12, 0.08);
+}
+
+.course-page-course-content-top .course-grid-top-bar .course-grid-showing-result .Mars-course-grid-list {
+  margin-right: 40px;
+}
+
+.course-page-course-content-top .course-grid-top-bar .course-grid-showing-result .Mars-course-grid-list a {
+  color: #010101;
+  font-size: 17px;
+  position: relative;
+  padding-right: 45px;
+  transition: 0.3s all ease-in-out;
+}
+
+.course-page-course-content-top .course-grid-top-bar .course-grid-showing-result .Mars-course-grid-list a:hover {
+  color: #ff5520;
+}
+
+.course-page-course-content-top .course-grid-top-bar .course-grid-showing-result .Mars-course-grid-list a:after {
+  top: 0px;
+  right: 20px;
+  content: "";
+  width: 2px;
+  height: 20px;
+  position: absolute;
+  background-color: #d7d8da;
+}
+
+.course-page-course-content-top .course-grid-top-bar .course-grid-showing-result .Mars-course-grid-list a:last-child {
+  padding-right: 0;
+}
+
+.course-page-course-content-top .course-grid-top-bar .course-grid-showing-result .Mars-course-grid-list a:last-child:after {
+  display: none;
+}
+
+.course-page-course-content-top .course-grid-top-bar .course-grid-showing-result .show-result-text {
+  font-size: 17px;
+}
+
+.course-page-course-content-top .course-grid-top-bar .Mars-course-search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.course-page-course-content-top .course-grid-top-bar .Mars-course-search button {
+  top: 0;
+  right: 0;
+  color: #fff;
+  border: none;
+  height: 100%;
+  width: 160px;
+  font-weight: 700;
+  position: absolute;
+  background-color: #f4511f;
+}
+
+.course-page-courses-item .Mars-popular-course-img-text .Mars-popular-course-text h3 {
+  font-size: 22px;
+}
+
+.Mars-course-pagination {
+  margin-top: 15px;
+}
+
+.Mars-course-pagination ul li a {
+  color: #000;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px 5px;
+  line-height: 45px;
+  display: inline-block;
+  font-family: "Fira Sans";
+  background-color: #ffffff;
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-course-pagination ul li a:hover {
+  color: #fff;
+  background-color: #ef4826;
+}
+
+@media screen and (max-width: 767px) {
+  .course-page-courses-item .Mars-popular-course-img-text {
+    max-width: 370px;
+  }
+
+  .course-page-course-content-top {
+    margin-bottom: 20px;
+  }
+
+  .course-page-course-content-top .course-grid-top-bar {
+    margin-bottom: 30px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .course-page-course-content-top .course-grid-top-bar .Mars-course-search button {
+    width: 120px;
+  }
+
+  .course-page-course-content-top .course-grid-top-bar .course-grid-showing-result .Mars-course-grid-list {
+    margin-right: 20px;
+  }
+
+  .course-page-course-section {
+    padding: 50px 0px;
+  }
+}
+
+/*Course Details Page  area*/
+/*-----------------------------*/
+.course-details-section {
+  padding: 100px 0px;
+  background-color: #f2f2f4;
+}
+
+.course-details-tab-area {
+  background-color: #fff;
+}
+
+.course-details-tab-wrapper {
+  padding: 40px 40px;
+}
+
+.course-details-tab-btn {
+  margin-bottom: 30px;
+  background-color: #f2f2f4;
+}
+
+.course-details-tab-btn .nav-tabs .nav-item.show .nav-link,
+.course-details-tab-btn .nav-tabs .nav-link.active,
+.course-details-tab-btn .nav-tabs,
+.course-details-tab-btn .nav-tabs .nav-link {
+  border: none;
+  border-radius: 0;
+}
+
+.course-details-tab-btn .nav-tabs .nav-link {
+  padding: 22px 38px;
+}
+
+.course-details-tab-btn .nav-tabs .nav-link.active {
+  background-color: #ff5520;
+  color: #fff;
+}
+
+.course-details-tab-btn ul li a {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.c-overview-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.overview-feature-list {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-details-overview-feature {
+  margin-top: 40px;
+}
+
+.overview-feature-icon-text {
+  width: 50%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.overview-feature-icon-text .overview-feature-icon-title {
+  margin-bottom: 10px;
+}
+
+.overview-feature-icon-text .overview-feature-icon-title h3 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.overview-feature-icon-text .overview-feature-icon-title img,
+.overview-feature-icon-text .overview-feature-icon-title i {
+  margin-right: 10px;
+}
+
+.overview-feature-icon-text .overview-feature-text {
+  overflow: hidden;
+}
+
+.overview-feature-icon-text .overview-feature-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 330px;
+}
+
+.overview-feature-icon-text .overview-feature-text a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.cd-curriculam-time-lesson span {
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.Mars-cd-cur-accordion {
+  margin-bottom: 10px;
+}
+
+.Mars-cd-cur-accordion .Mars-cd-cur-accordion-header button {
+  width: 100%;
+  border: none;
+  position: relative;
+  padding: 20px 20px 20px 50px;
+  background-color: #f2f2f4;
+}
+
+.Mars-cd-cur-accordion .Mars-cd-cur-accordion-header button h3 {
+  color: #000;
+  float: left;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Mars-cd-cur-accordion .Mars-cd-cur-accordion-header button:after {
+  top: -10px;
+  left: 15px;
+  color: #000;
+  font-size: 50px;
+  content: "-";
+  position: absolute;
+}
+
+.Mars-cd-cur-accordion .Mars-cd-cur-accordion-header button.collapsed:after {
+  top: 0;
+  content: "+";
+  font-size: 40px;
+}
+
+.Mars-cd-cur-accordion .Mars-cd-cur-accordion-body {
+  padding: 20px 30px;
+  border: 1px solid #f2f2f4;
+}
+
+.Mars-cd-cur-accordion .Mars-cd-cur-accordion-body li {
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.Mars-cd-cur-accordion .Mars-cd-cur-accordion-body li i {
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.Mars-cd-cur-accordion .Mars-cd-cur-accordion-body li span {
+  float: right;
+}
+
+.Mars-cd-cur-accordion .Mars-cd-cur-accordion-body li .acc-title {
+  color: #ff5520;
+  margin-right: 10px;
+}
+
+.Mars-cd-cur-accordion .Mars-cd-cur-accordion-body li:last-child {
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.cd-ins-btn {
+  height: 48px;
+  width: 150px;
+  line-height: 44px;
+  border-radius: 30px;
+  border: 2px solid #ef4826;
+}
+
+.cd-ins-btn a {
+  color: #000;
+  width: 100%;
+  display: block;
+  font-weight: 700;
+}
+
+.cd-course-instructor-img-text {
+  margin-top: 20px;
+}
+
+.cd-course-instructor-img-text .cd-course-instructor-img {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  margin-right: 25px;
+  border-radius: 100%;
+}
+
+.cd-course-instructor-img-text .cd-course-instructor-text {
+  padding-top: 15px;
+}
+
+.cd-course-instructor-img-text .cd-course-instructor-text h3 {
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.cd-course-instructor-img-text .cd-course-instructor-text .cd-course-instructor-rate {
+  margin-bottom: 10px;
+}
+
+.cd-course-instructor-img-text .cd-course-instructor-text .cd-course-instructor-rate ul {
+  margin-right: 10px;
+}
+
+.cd-course-instructor-img-text .cd-course-instructor-text .cd-course-instructor-rate ul li {
+  color: #ebc90a;
+}
+
+.cd-course-instructor-img-text .cd-course-instructor-text .cd-course-instructor-rate ul li.unchecked {
+  color: #d3d3d3;
+}
+
+.cd-course-instructor-img-text .cd-course-instructor-text .cd-course-instructor-rate .cd-ins-review-rate {
+  color: #000;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.cd-course-instructor-img-text .cd-course-instructor-text .cd-course-instructor-rate .cd-ins-total-review {
+  font-size: 14px;
+}
+
+.cd-course-instructor-img-text .cd-course-instructor-text .cd-ins-course-student span {
+  margin-right: 20px;
+}
+
+.cd-course-instructor-img-text .cd-course-instructor-text .cd-ins-course-student span i {
+  color: #ef4826;
+  margin-right: 6px;
+}
+
+.cd-ins-details {
+  margin-top: 25px;
+}
+
+.cd-ins-details p {
+  margin-bottom: 30px;
+}
+
+.cd-course-user-comment {
+  margin-top: 15px;
+}
+
+.cd-course-review-comment {
+  margin-bottom: 40px;
+}
+
+.cd-course-review-comment .cd-course-review-img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.cd-course-review-comment .cd-course-review-text {
+  overflow: hidden;
+}
+
+.cd-course-review-comment .cd-course-review-author-rattting .cd-course-review-author {
+  margin-bottom: 15px;
+}
+
+.cd-course-review-comment .cd-course-review-author-rattting .cd-course-review-author h3 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.cd-course-review-comment .cd-course-review-author-rattting .cd-course-review-author span {
+  font-size: 14px;
+}
+
+.cd-course-review-comment .cd-course-review-author-rattting .cd-course-review-rate ul {
+  margin-right: 10px;
+}
+
+.cd-course-review-comment .cd-course-review-author-rattting .cd-course-review-rate ul li {
+  color: #ebc90a;
+}
+
+.cd-course-review-comment .cd-course-review-author-rattting .cd-course-review-rate ul li.unchecked {
+  color: #d3d3d3;
+}
+
+.cd-course-review-comment .cd-course-review-author-rattting .cd-course-review-rate .cd-ins-review-rate {
+  color: #000;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.cd-course-review-comment .cd-course-review-author-rattting .cd-course-review-rate .cd-ins-total-review {
+  font-size: 14px;
+}
+
+.cd-course-review-comment p {
+  margin-bottom: 25px;
+}
+
+.cd-course-review-comment .cd-reply-btn {
+  color: #fff;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 30px;
+  line-height: 40px;
+  display: inline-block;
+  background-color: #ff5520;
+}
+
+.cd-review-form {
+  padding-top: 100px;
+  position: relative;
+}
+
+.cd-review-form:before {
+  top: 0;
+  left: -45px;
+  height: 40px;
+  width: 111%;
+  content: "";
+  position: absolute;
+  background-color: #f2f2f4;
+}
+
+.cd-review-form .cd-comment-input {
+  flex-wrap: wrap;
+  margin: 0px -7px;
+}
+
+.cd-review-form .cd-comment-input-field {
+  padding: 0px 7px;
+}
+
+.cd-review-form input {
+  width: 254px;
+  height: 45px;
+  border: none;
+  padding-left: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: #efeff0;
+}
+
+.cd-review-form textarea {
+  width: 100%;
+  border: none;
+  height: 165px;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  background-color: #efeff0;
+}
+
+.cd-review-form button {
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  border: none;
+  font-weight: 700;
+  border-radius: 40px;
+  background-color: #ef4826;
+}
+
+.cd-review-form button i {
+  margin-left: 5px;
+}
+
+.cd-offline-wrap .offline-download-btn {
+  color: #fff;
+  font-weight: 700;
+  margin-top: 30px;
+  padding: 15px 30px;
+  border-radius: 40px;
+  display: inline-block;
+  background-color: #ff5520;
+}
+
+.course-widget-wrap {
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+
+.course-widget-wrap .cd-widget-title {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.course-widget-wrap .cd-video-widget a {
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  color: #ff5520;
+  position: absolute;
+  line-height: 50px;
+  border-radius: 100%;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+.course-widget-wrap .cd-course-table-widget {
+  padding: 35px 30px;
+}
+
+.course-widget-wrap .cd-course-table-widget .course-table-item {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eef1fe;
+}
+
+.course-widget-wrap .cd-course-table-widget .course-table-item:last-child {
+  border-bottom: none;
+}
+
+.course-widget-wrap .cd-course-table-widget .course-table-item .cd-table-title,
+.course-widget-wrap .cd-course-table-widget .course-table-item .cd-table-valur {
+  color: #000;
+}
+
+.course-widget-wrap .cd-course-table-widget .course-table-item .cd-table-title i,
+.course-widget-wrap .cd-course-table-widget .course-table-item .cd-table-valur i {
+  color: #ff5520;
+  margin-right: 7px;
+}
+
+.course-widget-wrap .cd-course-table-widget .cd-course-price span {
+  float: left;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.course-widget-wrap .cd-course-table-widget .cd-course-price span strong {
+  color: #ff5520;
+}
+
+.course-widget-wrap .cd-course-table-widget .cd-course-price a {
+  color: #fff;
+  width: 75px;
+  height: 30px;
+  float: right;
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-left: 20px;
+  text-align: center;
+  display: inline-block;
+  background-color: #ff5520;
+}
+
+.course-widget-wrap .cd-course-news-widget {
+  padding: 35px 30px;
+}
+
+.course-widget-wrap .cd-course-news-item {
+  margin-top: 28px;
+}
+
+.cd-course-news-img-text {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eef1fe;
+}
+
+.cd-course-news-img-text:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cd-course-news-img-text .cd-course-news-img {
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+  margin-right: 15px;
+  border-radius: 100%;
+}
+
+.cd-course-news-img-text .cd-course-news-text {
+  padding-top: 3px;
+  overflow: hidden;
+}
+
+.cd-course-news-img-text .cd-course-news-text a {
+  color: #000;
+  display: block;
+  font-weight: 700;
+  line-height: 1.375;
+  padding-bottom: 3px;
+}
+
+.cd-course-news-img-text .cd-course-news-text span {
+  display: block;
+  color: #ff5520;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1180px) {
+  .course-details-tab-wrapper {
+    padding: 40px 15px;
+  }
+
+  .course-details-tab-btn .nav-tabs .nav-link {
+    padding: 22px 25px;
+  }
+
+  .course-widget-wrap .cd-course-table-widget,
+  .course-widget-wrap .cd-course-news-widget {
+    padding: 35px 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .course-widget-wrap .cd-course-table-widget .cd-course-price span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cd-video-widget {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .overview-feature-icon-text {
+    width: 100%;
+  }
+
+  .Mars-cd-cur-accordion .Mars-cd-cur-accordion-header button h3 {
+    font-size: 16px;
+  }
+
+  .cd-curriculam-time-lesson span {
+    margin-left: 10px;
+  }
+
+  .Mars-cd-cur-accordion .Mars-cd-cur-accordion-header button:after {
+    display: none;
+  }
+
+  .Mars-cd-cur-accordion .Mars-cd-cur-accordion-header button {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .cd-review-form .cd-comment-input {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Mars-cd-cur-accordion .Mars-cd-cur-accordion-header button {
+    text-align: left;
+  }
+
+  .cd-curriculam-time-lesson {
+    float: none !important;
+    display: inline-block;
+  }
+
+  .Mars-cd-cur-accordion .Mars-cd-cur-accordion-header button h3 {
+    float: none;
+  }
+
+  .cd-curriculam-time-lesson span {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+  .Mars-cd-cur-accordion .Mars-cd-cur-accordion-body li span {
+    float: none;
+    display: block;
+  }
+
+  .cd-ins-btn {
+    display: none;
+  }
+
+  .cd-course-instructor-img-text .cd-course-instructor-text .cd-course-instructor-rate {
+    flex-wrap: wrap;
+  }
+
+  .cd-course-instructor-img-text .cd-course-instructor-text {
+    overflow: hidden;
+  }
+
+  .cd-course-review-rate {
+    float: left !important;
+    margin-bottom: 15px;
+  }
+
+  .cd-course-review-comment .cd-course-review-author-rattting .cd-course-review-author {
+    margin-bottom: 5px;
+  }
+
+  .cd-review-form input,
+  .cd-review-form .cd-comment-input-field {
+    width: 100%;
+  }
+
+  .course-details-tab-btn .nav-tabs .nav-link {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .cd-course-instructor-img-text .cd-course-instructor-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Mars-cd-cur-accordion .Mars-cd-cur-accordion-body {
+    padding: 15px;
+  }
+}
+
+.Mars-course-section-3 {
+  padding: 50px 0px 90px;
+  background-color: #f2f2f4;
+}
+
+.Mars-course-content-3 {
+  margin-top: 40px;
+}
+
+/*---------------------------------------------------- */
+/*Registration area*/
+/*----------------------------------------------------*/
+.Mars-registration-section {
+  z-index: 1;
+  padding: 95px 0px 85px;
+  background-color: #ef4826;
+}
+
+.Mars-registration-section:before {
+  top: 0;
+  left: 0;
+  width: 50%;
+  content: "";
+  height: 100%;
+  opacity: 0.1;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(../img/cd-bg.jpg);
+}
+
+.Mars-registration-section:after {
+  top: 0;
+  right: -30px;
+  width: 54%;
+  content: "";
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../img/cd-bg2.png);
+}
+
+.Mars-registration-countdown {
+  max-width: 500px;
+}
+
+.Mars-registration-countdown .Mars-section-title span {
+  color: #fff;
+}
+
+.Mars-registration-countdown .Mars-section-title span:before,
+.Mars-registration-countdown .Mars-section-title span:after {
+  background-color: #fff;
+}
+
+.Mars-registration-countdown .Mars-section-title h2 {
+  color: #fff;
+}
+
+.Mars-registration-countdown-wrap {
+  margin-top: 25px;
+}
+
+.Mars-registration-countdown-wrap ul li {
+  margin-right: 15px;
+}
+
+.Mars-registration-countdown-wrap ul li span {
+  display: block;
+  text-align: center;
+}
+
+.Mars-registration-countdown-wrap ul li .arch-count-down-number {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 100px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  font-family: "Fira Sans";
+  background-color: #830017;
+}
+
+.Mars-registration-countdown-wrap ul li .count-unit {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Mars-registration-text-wrap {
+  padding-top: 10px;
+  padding-left: 100px;
+}
+
+.Mars-registration-text-wrap h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  line-height: 1.333;
+}
+
+.Mars-registration-text-wrap p {
+  color: #cecece;
+  padding-bottom: 40px;
+}
+
+.Mars-registration-text-wrap a {
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  display: block;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  background-color: #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-registration-text-wrap a:after {
+  background-color: #fff;
+}
+
+.Mars-registration-text-wrap a:hover {
+  color: #000;
+}
+
+/*Registration section 2*/
+/*-----------------------------*/
+.Mars-registration-section-2 {
+  padding-top: 60px;
+}
+
+.Mars-registration-section-2:before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 210px;
+  position: absolute;
+  background-color: #f7f7f7;
+}
+
+.Mars-registration-content-2 {
+  z-index: 1;
+  padding: 45px;
+  background-color: #fff;
+  box-shadow: -3.285px 20.741px 51px 0px rgba(0, 0, 47, 0.05);
+}
+
+.Mars-registration-content-2:before {
+  top: 0;
+  left: 0;
+  width: 70%;
+  z-index: -1;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url(../img/r-bg.png);
+}
+
+.Mars-registration-content-2 .registration-side-img {
+  right: 0;
+  bottom: 0;
+}
+
+.Mars-registration-content-2 .registration-text-2 {
+  max-width: 450px;
+}
+
+.Mars-registration-content-2 .registration-text-2 h3 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.167;
+  padding-bottom: 20px;
+}
+
+.Mars-registration-content-2 .registration-text-2 h3 span {
+  color: #ff5520;
+}
+
+.Mars-registration-content-2 .registration-text-2 p {
+  color: #c6c6c6;
+  padding-bottom: 25px;
+}
+
+.Mars-registration-content-2 .registration-text-2 a {
+  height: 45px;
+  width: 140px;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  line-height: 45px;
+  overflow: hidden;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 40px;
+  background-color: #00a4ff;
+}
+
+.Mars-registration-content-2 .registration-text-2 a:after {
+  background-color: #ff5520;
+}
+
+/*---------------------------------------------------- */
+/*Blog area*/
+/*----------------------------------------------------*/
+.Mars-blog-section {
+  padding: 100px 0px;
+}
+
+.Mars-blog-section .Mars-blog-slide-wrap {
+  margin-top: 35px;
+}
+
+.Mars-blog-img-text {
+  padding: 25px;
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 14px 29px 0px rgba(12, 12, 12, 0.08);
+}
+
+.Mars-blog-img-text .Mars-blog-img {
+  overflow: hidden;
+  position: relative;
+}
+
+.Mars-blog-img-text .Mars-blog-img img {
+  transition: 0.5s all ease-in-out;
+}
+
+.Mars-blog-img-text .Mars-blog-img:before {
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.Mars-blog-img-text .Mars-blog-date {
+  color: #fff;
+  right: 20px;
+  bottom: 15px;
+  z-index: 2;
+  font-size: 14px;
+  padding: 5px 10px;
+  position: absolute;
+  background-color: #ef4826;
+}
+
+.Mars-blog-img-text .Mars-blog-text {
+  margin-top: 22px;
+}
+
+.Mars-blog-img-text .Mars-blog-text .Mars-blog-meta {
+  margin-bottom: 10px;
+}
+
+.Mars-blog-img-text .Mars-blog-text .Mars-blog-meta a {
+  font-weight: 500;
+  margin-right: 16px;
+  font-family: "Fira Sans";
+}
+
+.Mars-blog-img-text .Mars-blog-text .Mars-blog-meta a i {
+  color: #777777;
+  color: #ef4826;
+}
+
+.Mars-blog-img-text .Mars-blog-title h3 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-blog-img-text .Mars-blog-title p {
+  color: #353535;
+  padding-bottom: 20px;
+}
+
+.Mars-blog-img-text:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 29px 29px 0px rgba(12, 12, 12, 0.26);
+}
+
+.Mars-blog-img-text:hover h3 {
+  color: #ef4826;
+}
+
+.Mars-blog-img-text:hover .Mars-blog-img img {
+  transform: scale(1.2);
+}
+
+.Mars-blog-img-text:hover .Mars-blog-img:before {
+  height: 100%;
+}
+
+#Mars-blog-slider-id .owl-stage-outer {
+  overflow: visible;
+}
+
+#Mars-blog-slider-id .owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+#Mars-blog-slider-id .owl-item.active {
+  opacity: 1;
+}
+
+#Mars-blog-slider-id .owl-nav {
+  right: 0;
+  top: -110px;
+  position: absolute;
+}
+
+#Mars-blog-slider-id .owl-nav .owl-next,
+#Mars-blog-slider-id .owl-nav .owl-prev {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  line-height: 60px;
+  margin-left: 12px;
+  text-align: center;
+  border-radius: 100%;
+  display: inline-block;
+  border: 2px solid #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+#Mars-blog-slider-id .owl-nav .owl-next:hover,
+#Mars-blog-slider-id .owl-nav .owl-prev:hover {
+  color: #fff;
+  background-color: #ef4826;
+}
+
+/*Blog section 2*/
+/*-----------------------------*/
+.Mars-blog-section-2 {
+  padding: 105px 0px 60px;
+  background-color: #f7f7f7;
+}
+
+.Mars-blog-section-2 .Mars-section-title .title-watermark {
+  color: #fff;
+  opacity: 0.75;
+}
+
+.Mars-blog-section-2 .Mars-blog-content-2 {
+  margin-top: 25px;
+}
+
+.Mars-blog-img-text-2 {
+  margin: 0 auto;
+  max-width: 370px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-img-2 .Mars-blog-img-warap-2 {
+  overflow: hidden;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-img-2 .Mars-blog-img-warap-2 img {
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-img-2 .Mars-blog-img-warap-2:after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.Mars-blog-img-text-2 .Mars-blog-img-2 .Mars-blog-date-2 {
+  left: 25px;
+  width: 80px;
+  height: 80px;
+  bottom: -30px;
+  padding-top: 13px;
+  border-radius: 3px;
+  position: absolute;
+  background-color: #000;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-img-2 .Mars-blog-date-2 a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  display: inline-block;
+  font-family: "Fira Sans";
+}
+
+.Mars-blog-img-text-2 .Mars-blog-img-2 .Mars-blog-date-2 a span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-text-2 {
+  padding: 45px 25px;
+  box-shadow: 0px 12px 35px 0px rgba(12, 12, 12, 0.06);
+}
+
+.Mars-blog-img-text-2 .Mars-blog-title-text-2 h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  padding: 10px 0px 15px;
+  border-bottom: 2px solid #eaeaea;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-title-text-2 h3:before {
+  left: 0;
+  bottom: -1px;
+  height: 3px;
+  content: "";
+  width: 37px;
+  position: absolute;
+  background-color: #ff5520;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-title-text-2 h3:hover {
+  color: #ff5520;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-title-text-2 p {
+  padding-bottom: 14px;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-title-text-2 .Mars-blog-more {
+  color: #000;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s all ease-in-out;
+  position: relative;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-title-text-2 .Mars-blog-more:after {
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+  background-color: #ef4826;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-title-text-2 .Mars-blog-more:hover {
+  color: #ef4826;
+}
+
+.Mars-blog-img-text-2 .Mars-blog-title-text-2 .Mars-blog-more:hover:after {
+  width: 100%;
+}
+
+.Mars-blog-img-text-2:hover {
+  box-shadow: 0px 43px 35px 0px rgba(12, 12, 12, 0.1);
+}
+
+.Mars-blog-img-text-2:hover .Mars-blog-img-warap-2 img {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.Mars-blog-meta-2 a {
+  font-size: 13px;
+  font-weight: 700;
+  margin-right: 25px;
+  position: relative;
+  color: #ef4826;
+  font-family: "Fira Sans";
+}
+
+.Mars-blog-meta-2 a:after {
+  top: -3px;
+  width: 2px;
+  content: "";
+  right: -15px;
+  height: 20px;
+  position: absolute;
+  background-color: #ef4826;
+}
+
+.Mars-blog-meta-2 a:last-child:after {
+  display: none;
+}
+
+#Mars-blog-slider-2 .owl-nav {
+  display: none;
+}
+
+#Mars-blog-slider-2 .owl-stage-outer {
+  overflow: visible;
+}
+
+#Mars-blog-slider-2 .owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+#Mars-blog-slider-2 .owl-item.active {
+  opacity: 1;
+}
+
+#Mars-blog-slider-2 .owl-dots {
+  margin-top: 35px;
+  text-align: center;
+}
+
+#Mars-blog-slider-2 .owl-dots .owl-dot {
+  width: 28px;
+  height: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+  border-radius: 30%;
+  display: inline-block;
+  background-color: #ececed;
+  transition: 0.3s all ease-in-out;
+}
+
+#Mars-blog-slider-2 .owl-dots .owl-dot.active {
+  width: 38px;
+  background-color: #ef4826;
+}
+
+.Mars-blog-feed-section,
+.blog-feed-list-section {
+  padding: 100px 0px;
+  background-color: #f2f2f4;
+}
+
+.blog-feed-list-img-text .Mars-blog-img-text-2 .Mars-blog-img-2 .Mars-blog-img-warap-2 {
+  border-radius: 5px;
+}
+
+.blog-feed-list-img-text .Mars-blog-img-text-2 .Mars-blog-img-2 .Mars-blog-date-2 {
+  left: 40px;
+}
+
+.blog-feed-list-img-text .Mars-blog-img-text-2 {
+  max-width: 100%;
+}
+
+.blog-feed-list-img-text .Mars-blog-img-text-2 .Mars-blog-title-text-2 h3 {
+  border: none;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.blog-feed-list-img-text .Mars-blog-img-text-2 .Mars-blog-title-text-2 h3:before {
+  display: none;
+}
+
+.blog-feed-list-img-text .Mars-blog-img-text-2 .Mars-blog-title-text-2 p {
+  padding-bottom: 30px;
+}
+
+.blog-feed-list-img-text .Mars-blog-img-text-2 .Mars-blog-text-2 {
+  padding: 48px 40px 40px;
+}
+
+.blog-feed-list-img-text .Mars-blog-img-text-2 .Mars-blog-more {
+  border-radius: 4px;
+  padding: 14px 28px 12px;
+  border: 2px solid #ff5520;
+}
+
+.blog-feed-list-img-text .Mars-blog-img-text-2 .Mars-blog-more:after {
+  display: none;
+}
+
+.blog-feed-list-img-text .Mars-blog-img-text-2 .Mars-blog-more:hover {
+  color: #fff;
+  background-color: #ff5520;
+}
+
+.Mars-blog-list-share {
+  padding-top: 10px;
+}
+
+.Mars-blog-list-share .blog-share-slug {
+  color: #000;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.Mars-blog-list-share a {
+  width: 42px;
+  color: #fff;
+  height: 42px;
+  line-height: 42px;
+  margin-left: 8px;
+  text-align: center;
+  border-radius: 100%;
+  display: inline-block;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-blog-list-share a:hover {
+  transform: scale(1.1);
+}
+
+.Mars-blog-list-share a:nth-child(2) {
+  background-color: #3b5998;
+}
+
+.Mars-blog-list-share a:nth-child(3) {
+  background-color: #1da1f2;
+}
+
+.Mars-blog-list-share a:nth-child(4) {
+  background-color: #0077b5;
+}
+
+.Mars-blog-widget-wrap {
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+
+.Mars-blog-widget-wrap .widget-title {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Mars-blog-widget-wrap .Mars-search-widget input {
+  width: 100%;
+  height: 48px;
+  border: none;
+  padding-left: 15px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.Mars-blog-widget-wrap .Mars-search-widget button {
+  top: 0;
+  right: 0;
+  width: 48px;
+  color: #fff;
+  border: none;
+  height: 48px;
+  position: absolute;
+  border-radius: 4px;
+  background-color: #ff5520;
+}
+
+.Mars-blog-widget-wrap .Mars-category-widget {
+  padding: 35px 30px;
+}
+
+.Mars-blog-widget-wrap .Mars-category-widget li {
+  margin-bottom: 5px;
+}
+
+.Mars-blog-widget-wrap .Mars-category-widget li a {
+  color: #000;
+  font-weight: 700;
+  padding-left: 15px;
+  position: relative;
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-blog-widget-wrap .Mars-category-widget li a:after {
+  left: 0;
+  top: -1px;
+  color: #ff5520;
+  font-size: 14px;
+  content: "";
+  position: absolute;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+
+.Mars-blog-widget-wrap .Mars-category-widget li a:hover {
+  margin-left: 15px;
+}
+
+.Mars-blog-widget-wrap .Mars-category-widget li:last-child {
+  margin-bottom: 0;
+}
+
+.Mars-blog-widget-wrap .Mars-recent-blog-widget {
+  padding: 35px 30px;
+}
+
+.Mars-blog-widget-wrap .Mars-recent-blog-widget .Mars-recent-blog-img-text {
+  width: 100%;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  display: inline-block;
+  border: 1px solid #eef1fe;
+}
+
+.Mars-blog-widget-wrap .Mars-recent-blog-widget .Mars-recent-blog-img-text:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.Mars-blog-widget-wrap .Mars-recent-blog-widget .Mars-recent-blog-img-text .Mars-recent-blog-img {
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.Mars-blog-widget-wrap .Mars-recent-blog-widget .Mars-recent-blog-img-text .Mars-recent-blog-text {
+  overflow: hidden;
+}
+
+.Mars-blog-widget-wrap .Mars-recent-blog-widget .Mars-recent-blog-img-text .Mars-recent-blog-text span {
+  color: #888888;
+  font-size: 14px;
+}
+
+.Mars-blog-widget-wrap .Mars-recent-blog-widget .Mars-recent-blog-img-text .Mars-recent-blog-text h3 {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.Mars-blog-widget-wrap .Mars-blog-category-widget {
+  padding: 35px 30px;
+}
+
+.Mars-blog-widget-wrap .Mars-blog-category-widget .Mars-blog-category-tag a {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 10px 12px;
+  border-radius: 30px;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+}
+
+@media screen and (max-width: 991px) {
+  .Mars-blog-sidebar {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blog-feed-list-img-text .Mars-blog-img-text-2 .Mars-blog-title-text-2 h3 {
+    font-size: 30px;
+  }
+
+  .blog-feed-list-img-text .Mars-blog-img-text-2 .Mars-blog-text-2 {
+    padding: 48px 20px 40px;
+  }
+
+  .Mars-blog-list-share,
+  .Mars-blog-more {
+    float: none !important;
+  }
+
+  .Mars-blog-more {
+    margin-bottom: 15px;
+  }
+}
+
+.Mars-blog-details-section {
+  padding: 100px 0px;
+  background-color: #f2f2f4;
+}
+
+.Mars-blog-details-section .Mars-blog-details-wrap {
+  background-color: #fff;
+}
+
+.Mars-blog-details-section .Mars-blog-details-wrap .Mars-blog-details-thumb {
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-wrap .Mars-blog-meta-2 {
+  margin-bottom: 45px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-wrap .Mars-blog-details-text {
+  padding: 40px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-wrap article {
+  margin-bottom: 30px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-wrap blockquote {
+  color: 3888888;
+  font-size: 21px;
+  font-style: italic;
+  margin-bottom: 35px;
+  padding: 20px 0px 20px 60px;
+  border-left: 4px solid #ff5520;
+}
+
+.Mars-blog-details-section .Mars-blog-details-wrap blockquote .blockquote-author {
+  font-style: normal;
+  padding-left: 45px;
+  position: relative;
+}
+
+.Mars-blog-details-section .Mars-blog-details-wrap blockquote .blockquote-author:before {
+  left: 0;
+  top: 18px;
+  height: 1px;
+  width: 38px;
+  content: "";
+  position: absolute;
+  background-color: #000;
+}
+
+.Mars-blog-details-section .Mars-blog-details-wrap blockquote .blockquote-author strong {
+  color: #000;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-wrap blockquote .blockquote-author span {
+  font-size: 14px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-wrap .Mars-post-cat-wrap a {
+  margin-right: 5px;
+  padding: 10px 12px;
+  border-radius: 30px;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+}
+
+.Mars-blog-details-section .Mars-blog-details-next-prev-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  background-color: #fff;
+}
+
+.Mars-blog-details-section .Mars-blog-details-next-prev-wrap .Mars-blog-details-next-prev-item {
+  padding: 40px;
+  width: 50%;
+  border-right: 2px solid #e5e5e5;
+}
+
+.Mars-blog-details-section .Mars-blog-details-next-prev-wrap .Mars-blog-details-next-prev-item:last-child {
+  border: none;
+}
+
+.Mars-blog-details-section .Mars-blog-details-next-prev-wrap .Mars-blog-details-next-prev-item .Mars-blog-next-prev-title {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ff5520;
+}
+
+.Mars-blog-details-section .Mars-blog-details-next-prev-wrap .Mars-blog-details-next-prev-item .Mars-blog-next-prev-title a {
+  color: #000;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-next-prev-wrap .Mars-blog-details-next-prev-item .Mars-blog-next-prev-title a i {
+  font-size: 14px;
+  color: #ef4826;
+}
+
+.Mars-blog-details-section .Mars-blog-details-next-prev-wrap .Mars-blog-details-next-prev-item h3 {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.Mars-blog-details-section .Mars-blog-details-comment-area {
+  padding: 35px;
+  margin-top: 40px;
+  background-color: #fff;
+}
+
+.Mars-blog-details-section .Mars-blog-details-comment-area h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-discuss {
+  margin-top: 20px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox {
+  margin-bottom: 35px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox .Mars-comment-img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-right: 20px;
+  border-radius: 100%;
+}
+
+.Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox .Mars-comment-text {
+  overflow: hidden;
+}
+
+.Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox .Mars-comment-text h4 {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox .Mars-comment-text span {
+  color: #7f7f7f;
+  font-size: 14px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox .Mars-comment-text p {
+  margin-top: 15px;
+}
+
+.Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox .Mars-comment-text .Mars-comment-reply-btn {
+  top: 0;
+  right: 0;
+  color: #fff;
+  height: 42px;
+  width: 100px;
+  font-weight: 700;
+  position: absolute;
+  line-height: 42px;
+  border-radius: 30px;
+  background-color: #ff5520;
+}
+
+.Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox.Mars-reply-comment {
+  margin-left: 100px;
+}
+
+.Mars-blog-details-thumb-2 {
+  margin-bottom: 50px;
+}
+
+.Mars-blog-details-title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 570px) {
+  .Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox .Mars-comment-text .Mars-comment-reply-btn {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  .Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox.Mars-reply-comment {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Mars-blog-details-section .Mars-blog-details-next-prev-wrap .Mars-blog-details-next-prev-item {
+    width: 100%;
+    border: none;
+  }
+
+  .Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox .Mars-comment-img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .Mars-blog-details-title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+  .Mars-blog-details-section .Mars-blog-details-wrap .Mars-blog-details-text,
+  .Mars-blog-details-section .Mars-blog-details-comment-area {
+    padding: 40px 15px;
+  }
+}
+
+.Mars-blog-section-4 {
+  padding: 110px 0px;
+}
+
+.blog-btn-4 {
+  margin-top: 40px;
+}
+
+.blog-btn-4 a {
+  color: #fff;
+  height: 50px;
+  width: 150px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 50px;
+  border-radius: 5px;
+  display: inline-block;
+  background-color: #ff3614;
+}
+
+/*---------------------------------------------------- */
+/*Newslatter area*/
+/*----------------------------------------------------*/
+.Mars-newslatter-section {
+  padding: 35px 0px;
+  background-color: #000;
+}
+
+.Mars-newslatter-content {
+  padding: 0px 40px;
+}
+
+.Mars-newslatter-content .Mars-newslatter-text-icon .Mars-newslatter-icon {
+  line-height: 1;
+  margin-right: 20px;
+}
+
+.Mars-newslatter-content .Mars-newslatter-text-icon .Mars-newslatter-icon i {
+  color: #424242;
+  font-size: 60px;
+}
+
+.Mars-newslatter-content .Mars-newslatter-text-icon .Mars-newslatter-text h3 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.Mars-newslatter-content .Mars-newslatter-text-icon .Mars-newslatter-text span {
+  color: #bbbbbb;
+}
+
+.Mars-newslatter-content .Mars-newslatter-text-icon .Mars-newslatter-text span img {
+  margin-top: -5px;
+  padding-left: 5px;
+}
+
+.Mars-newslatter-content .Mars-newslatter-form {
+  margin-top: 20px;
+  padding-left: 55px;
+}
+
+.Mars-newslatter-content .Mars-newslatter-form input {
+  height: 48px;
+  width: 100%;
+  border: none;
+  max-width: 320px;
+  padding-left: 20px;
+  background-color: #292929;
+}
+
+.Mars-newslatter-content .Mars-newslatter-form button {
+  top: 0;
+  right: 0;
+  padding: 0;
+  color: #fff;
+  border: none;
+  width: 145px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  background-color: #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-newslatter-content .Mars-newslatter-form button:after {
+  background-color: #fff;
+}
+
+.Mars-newslatter-content .Mars-newslatter-form button i {
+  margin-left: 5px;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-newslatter-content .Mars-newslatter-form button:hover {
+  color: #000;
+}
+
+.Mars-newslatter-content .Mars-newslatter-form button:hover i {
+  animation: toLeftFromRight 0.3s forwards;
+}
+
+/*Newslatter section 2*/
+/*--------------------------*/
+.Mars-newslatter-section-2 {
+  z-index: 1;
+  background-color: #f7f7f7;
+}
+
+.Mars-newslatter-section-2:before {
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  background-color: #000a1f;
+}
+
+.Mars-newslatter-section-2 .Mars-newslatter-content {
+  border-radius: 5px;
+  padding: 35px 40px;
+  background-color: #212121;
+}
+
+.Mars-newslatter-section-2 .Mars-newslatter-content .Mars-newslatter-form button {
+  background-color: #ff5520;
+}
+
+/*---------------------------------------------------- */
+/*Category area*/
+/*----------------------------------------------------*/
+.Mars-category-section {
+  padding: 95px 0px 100px;
+}
+
+.Mars-category-img-text {
+  border-radius: 10px;
+  background-color: #000;
+  padding: 25px 40px 0px;
+  margin-bottom: 35px;
+}
+
+.Mars-category-img-text .Mars-category-img img {
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-category-img-text .Mars-category-text-icon {
+  margin-bottom: 15px;
+}
+
+.Mars-category-img-text .Mars-category-text-icon .Mars-category-icon {
+  line-height: 1;
+  margin-right: 15px;
+  transition: 0.6s cubic-bezier(0.24, 0.74, 0.58, 1);
+}
+
+.Mars-category-img-text .Mars-category-text-icon .Mars-category-icon i {
+  font-size: 45px;
+  color: #ff5520;
+}
+
+.Mars-category-img-text .Mars-category-text h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.Mars-category-img-text .Mars-category-text span {
+  color: #ababab;
+}
+
+.Mars-category-img-text .Mars-category-hover-icon {
+  width: 60px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  bottom: 0px;
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  line-height: 60px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-category-img-text .Mars-category-hover-icon i {
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-category-img-text .Mars-category-hover-icon:hover i {
+  transform: rotate(130deg);
+}
+
+.Mars-category-img-text:hover .Mars-category-hover-icon {
+  opacity: 1;
+  bottom: -30px;
+  visibility: visible;
+}
+
+.Mars-category-img-text:hover .Mars-category-img img {
+  filter: grayscale(1);
+}
+
+.Mars-category-img-text:hover .Mars-category-icon {
+  transform: rotateY(360deg);
+}
+
+.Mars-category-slide-content {
+  margin-top: 40px;
+}
+
+.Mars-category-slide-content .owl-nav {
+  display: none;
+}
+
+.Mars-category-slide-content .owl-dots {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.Mars-category-slide-content .owl-dots .owl-dot {
+  width: 28px;
+  height: 5px;
+  margin: 0px 5px;
+  cursor: pointer;
+  border-radius: 30%;
+  display: inline-block;
+  background-color: #ececed;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-category-slide-content .owl-dots .owl-dot.active {
+  width: 38px;
+  background-color: #ef4826;
+}
+
+.Mars-category-section-2 {
+  padding: 110px 0px 90px;
+}
+
+.Mars-category-content-2 {
+  margin-top: 40px;
+}
+
+.Mars-category-innerbox-2 {
+  padding: 35px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0px 14px 29px 0px rgba(12, 12, 12, 0.08);
+}
+
+.Mars-category-innerbox-2 .Mars-category-icon {
+  transition: 0.6s cubic-bezier(0.24, 0.74, 0.58, 1);
+}
+
+.Mars-category-innerbox-2 .Mars-category-icon i {
+  color: #ff5520;
+  font-size: 60px;
+}
+
+.Mars-category-innerbox-2 .Mars-category-text h3 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Mars-category-innerbox-2:hover .Mars-category-icon {
+  transform: rotateY(360deg);
+}
+
+.Mars-top-category-section-4 {
+  z-index: 3;
+  overflow: visible;
+  position: relative;
+  margin-bottom: -100px;
+  background-color: #f9f8f8;
+}
+
+.Mars-top-category-content {
+  top: -100px;
+  position: relative;
+  padding: 100px 60px 0px;
+}
+
+.Mars-top-category-content .Mars-section-title {
+  margin-bottom: 25px;
+}
+
+.Mars-top-category-content .Mars-section-title span {
+  color: #ff3614;
+}
+
+.Mars-top-category-content .Mars-section-title span:before,
+.Mars-top-category-content .Mars-section-title span:after {
+  background-color: #ff3614;
+}
+
+.Mars-top-category-content .Mars-section-title h2 {
+  color: #fff;
+}
+
+.Mars-top-category-slide-item {
+  height: 220px;
+  padding-top: 38px;
+  background-color: #1a2847;
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-top-category-slide-item .Mars-top-category-slide-icon {
+  line-height: 1;
+  margin-bottom: 20px;
+  transition: all 0.35s cubic-bezier(0.38, 3, 0.57, 1.6);
+  transform: translate3d(0px, 0, 0);
+}
+
+.Mars-top-category-slide-item .Mars-top-category-slide-icon i {
+  color: #ff3614;
+  font-size: 50px;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-top-category-slide-item .Mars-top-category-slide-text h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.Mars-top-category-slide-item .Mars-top-category-slide-text span {
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-top-category-slide-item .Mars-top-category-slide-text .top-cat-more-icon {
+  left: 0;
+  right: 0px;
+  opacity: 0;
+  bottom: 40px;
+  color: #fff;
+  font-size: 18px;
+  position: absolute;
+  visibility: hidden;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-top-category-slide-item:hover {
+  background-color: #ff3614;
+}
+
+.Mars-top-category-slide-item:hover .Mars-top-category-slide-icon i {
+  color: #fff;
+}
+
+.Mars-top-category-slide-item:hover span {
+  opacity: 0;
+  margin-right: 20px;
+  visibility: hidden;
+}
+
+.Mars-top-category-slide-item:hover .top-cat-more-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Mars-top-category-slide-item:hover .Mars-top-category-slide-icon {
+  transition: all 0.35s cubic-bezier(0.38, 3, 0.57, 1.6);
+  transform: translate3d(0px, -6px, 0);
+}
+
+.Mars-top-category-slider .owl-nav .owl-next,
+.Mars-top-category-slider .owl-nav .owl-prev {
+  top: 50%;
+  width: 50px;
+  color: #fff;
+  height: 50px;
+  cursor: pointer;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  border-radius: 100%;
+  background-color: #1a2847;
+  transform: translateY(-50%);
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-top-category-slider .owl-nav .owl-next:hover,
+.Mars-top-category-slider .owl-nav .owl-prev:hover {
+  background-color: #ff3614;
+}
+
+.Mars-top-category-slider .owl-nav .owl-next {
+  right: -80px;
+}
+
+.Mars-top-category-slider .owl-nav .owl-prev {
+  left: -80px;
+}
+
+@media screen and (max-width: 420px) {
+  .Mars-section-title h2 {
+    font-size: 26px;
+  }
+
+  .Mars-top-category-content {
+    top: 0;
+    padding: 50px 20px;
+  }
+
+  .Mars-top-category-section-4 {
+    margin-bottom: 0;
+  }
+
+  .Mars-top-category-slider .owl-nav {
+    text-align: center;
+    margin: 30px 0px;
+  }
+
+  .Mars-top-category-slider .owl-nav .owl-next,
+  .Mars-top-category-slider .owl-nav .owl-prev {
+    position: static;
+    display: inline-block;
+    transform: translateY(0);
+  }
+}
+
+/*---------------------------------------------------- */
+/*breadcrumb area*/
+/*----------------------------------------------------*/
+.Mars-breadcrumb-section {
+  padding: 195px 0px 110px;
+}
+
+.Mars-breadcrumb-section .breadcrumb-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  background-color: #030014;
+}
+
+.Mars-breadcrumb-content {
+  z-index: 1;
+  position: relative;
+}
+
+.Mars-breadcrumb-content h2 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.Mars-breadcrumb-content .Mars-breadcrumb-item .breadcrumb {
+  justify-content: center;
+  background-color: transparent;
+}
+
+.Mars-breadcrumb-content .Mars-breadcrumb-item .breadcrumb li {
+  color: #fff;
+  font-weight: 700;
+}
+
+.Mars-breadcrumb-content .Mars-breadcrumb-item .breadcrumb .breadcrumb-item.active {
+  font-weight: 500;
+}
+
+.Mars-breadcrumb-content .Mars-breadcrumb-item .breadcrumb-item+.breadcrumb-item::before {
+  content: "";
+  font-weight: 900;
+  color: #ef4826;
+  font-family: "Font Awesome 5 Free";
+}
+
+@media screen and (max-width: 680px) {
+  .Mars-breadcrumb-content h2 {
+    font-size: 30px;
+  }
+}
+
+/*---------------------------------------------------- */
+/*Event area*/
+/*----------------------------------------------------*/
+.event-area-section {
+  padding: 95px 0px;
+  background-color: #f2f2f4;
+}
+
+.Mars-event-innerbox {
+  border-radius: 8px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  transition: 0.4s all ease-in-out;
+  box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.04);
+}
+
+.Mars-event-innerbox .Mars-event-img {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.Mars-event-innerbox .Mars-event-img img {
+  transition: 0.5s all ease-in-out;
+}
+
+.Mars-event-innerbox .Mars-event-text {
+  padding: 35px 25px;
+}
+
+.Mars-event-innerbox .Mars-event-text .event-date {
+  top: -55px;
+  left: 35px;
+  color: #fff;
+  width: 75px;
+  height: 75px;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 13px;
+  position: absolute;
+  border-radius: 100%;
+  font-family: "Fira Sans";
+  background-color: #ff5520;
+}
+
+.Mars-event-innerbox .Mars-event-text .event-date span {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.Mars-event-innerbox .Mars-event-text h3 {
+  color: #000000;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.273;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-event-innerbox .Mars-event-text h3:hover {
+  color: #ef4826;
+}
+
+.Mars-event-innerbox .Mars-event-text .Mars-event-meta {
+  padding-top: 20px;
+  margin-top: 15px;
+  border-top: 1px solid #e9e9e9;
+}
+
+.Mars-event-innerbox .Mars-event-text .Mars-event-meta a {
+  color: #555555;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.Mars-event-innerbox .Mars-event-text .Mars-event-meta a i {
+  margin-right: 5px;
+  color: #ef4826;
+}
+
+.Mars-event-innerbox .Mars-event-text .Mars-event-meta a:last-child {
+  margin-right: 0;
+}
+
+.Mars-event-innerbox:hover {
+  box-shadow: 0px 10px 51px 0px rgba(0, 0, 47, 0.12);
+}
+
+.Mars-event-innerbox:hover .Mars-event-img img {
+  transform: scale(1.2);
+}
+
+.Mars-event-btn {
+  height: 50px;
+  width: 135px;
+  margin: 0 auto;
+  margin-top: 10px;
+  line-height: 46px;
+  border-radius: 40px;
+  border: 2px solid #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-event-btn a {
+  color: #000;
+  width: 100%;
+  display: block;
+  font-weight: 700;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-event-btn:hover {
+  background-color: #ef4826;
+}
+
+.Mars-event-btn:hover a {
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .Mars-event-innerbox {
+    max-width: 370px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+.event-details-section {
+  padding: 120px 0px 70px;
+  background-color: #f2f2f4;
+}
+
+.event-details-text-wrap {
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+
+.event-details-text-wrap .event-details-text {
+  padding: 40px 40px 10px 40px;
+}
+
+.event-details-text-wrap .event-details-text h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.event-details-text-wrap .event-details-text p {
+  padding-bottom: 30px;
+}
+
+.ed-more-event h3 {
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+
+.Mars-event-widget {
+  padding: 35px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+
+.Mars-event-widget .widget-title {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.Mars-event-widget .ed-inner-widget {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eef1fe;
+}
+
+.Mars-event-widget .ed-inner-widget .ed-inner-title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.Mars-event-widget .ed-inner-widget .ed-inner-title i {
+  color: #ff5520;
+  margin-right: 8px;
+}
+
+.Mars-event-widget .ed-inner-widget span {
+  color: #000;
+  padding-left: 25px;
+  display: inline-block;
+}
+
+.Mars-event-widget .ed-inner-widget b {
+  color: #ff5520;
+  font-size: 24px;
+  line-height: 1;
+  padding-left: 25px;
+}
+
+.Mars-event-widget .ed-inner-widget:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.Mars-event-widget .ed-book-btn {
+  width: 100%;
+  color: #fff;
+  height: 45px;
+  margin-top: 20px;
+  font-weight: 700;
+  line-height: 45px;
+  border-radius: 4px;
+  display: inline-block;
+  background-color: #ef4826;
+}
+
+.Mars-event-wrap-section {
+  padding: 110px 0px 90px;
+}
+
+.Mars-event-content-wrap {
+  margin-top: 40px;
+}
+
+/*---------------------------------------------------- */
+/*Instructor area*/
+/*----------------------------------------------------*/
+.Mars-instructor-section {
+  padding: 100px 0px;
+  background-color: #f1f1f3;
+}
+
+.Mars-instructor-img-text .Mars-instructor-img {
+  width: 160px;
+  z-index: 3;
+  height: 160px;
+  bottom: -50px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 100%;
+  box-shadow: 0px 6px 42px 0px rgba(4, 4, 97, 0.12);
+}
+
+.Mars-instructor-img-text .Mars-instructor-text {
+  border-radius: 6px;
+  padding: 70px 15px 30px;
+  background-color: #fff;
+  z-index: 2;
+  box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.04);
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-instructor-img-text .Mars-instructor-text:after {
+  left: 0;
+  right: 0;
+  width: 90%;
+  content: "";
+  height: 10px;
+  z-index: -1;
+  bottom: -8px;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 6px;
+  background-color: #fbfbff;
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-instructor-img-text .Mars-instructor-text h3 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-instructor-img-text .Mars-instructor-text span {
+  display: block;
+  font-size: 14px;
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-instructor-img-text .Mars-instructor-text .Mars-ins-degi {
+  color: #000000;
+  font-weight: 700;
+  padding: 5px 0px;
+  font-family: "Fira Sans";
+}
+
+.Mars-instructor-img-text .Mars-instructor-text .Mars-ins-course-no {
+  color: #888888;
+}
+
+.Mars-instructor-img-text:hover .Mars-instructor-text {
+  background-color: #ff5520;
+}
+
+.Mars-instructor-img-text:hover .Mars-instructor-text:after {
+  background-color: #f7815d;
+}
+
+.Mars-instructor-img-text:hover h3,
+.Mars-instructor-img-text:hover .Mars-ins-degi,
+.Mars-instructor-img-text:hover .Mars-ins-course-no {
+  color: #fff;
+}
+
+.instructor-details-section {
+  padding: 100px 0px;
+  background-color: #f2f2f4;
+}
+
+.instructor-details-content {
+  padding: 35px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.04);
+}
+
+.instructor-details-content:after {
+  left: 0;
+  right: 0;
+  width: 97%;
+  content: "";
+  height: 15px;
+  bottom: -15px;
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #f6f6fa;
+}
+
+.instructor-details-img {
+  width: 370px;
+  height: 370px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 100%;
+  box-shadow: 0px 6px 42px 0px rgba(4, 4, 97, 0.12);
+}
+
+.instructor-details-text {
+  padding-top: 10px;
+}
+
+.instructor-details-name-social h3 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.instructor-details-name-social span {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Fira Sans";
+}
+
+.instructor-details-name-social .instructor-details-social {
+  margin-top: 10px;
+}
+
+.instructor-details-name-social .instructor-details-social a {
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.instructor-details-name-social .instructor-details-social a:nth-child(1) {
+  color: #3b5998;
+}
+
+.instructor-details-name-social .instructor-details-social a:nth-child(2) {
+  color: #1da1f2;
+}
+
+.instructor-details-name-social .instructor-details-social a:nth-child(3) {
+  color: #0077b5;
+}
+
+.instructor-details-name-social .instructor-details-social a:nth-child(4) {
+  color: #5973e9;
+}
+
+.instructor-details-profile {
+  width: 270px;
+  padding: 18px;
+  border-radius: 3px;
+  border: 2px solid #d1d1d3;
+}
+
+.instructor-details-profile span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.instructor-details-profile span b {
+  color: #000;
+}
+
+.instructor-details-profile span:last-child {
+  margin-bottom: 0;
+}
+
+.instructor-details-profile span i {
+  margin-right: 10px;
+  color: #ef4826;
+}
+
+.instructor-details-content-text {
+  margin-top: 35px;
+}
+
+.instructor-details-content-text p {
+  margin-bottom: 30px;
+}
+
+.instructor-details-content-text .instructor-details-btn {
+  color: #000;
+  height: 45px;
+  width: 150px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 40px;
+  border-radius: 30px;
+  border: 2px solid #ff5520;
+  transition: 0.3s all ease-in-out;
+}
+
+.instructor-details-content-text .instructor-details-btn i {
+  font-size: 14px;
+}
+
+.instructor-details-content-text .instructor-details-btn a {
+  width: 100%;
+  display: block;
+}
+
+.instructor-details-content-text .instructor-details-btn:hover {
+  color: #fff;
+  background-color: #ff5520;
+}
+
+.instructor-popular-section {
+  background-color: #f2f2f4;
+  padding-bottom: 100px;
+}
+
+.instructor-popular-content h2 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .instructor-details-text {
+    margin: 0 auto;
+    max-width: 670px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+
+  .instructor-details-profile,
+  .instructor-details-name-social {
+    width: 100%;
+    float: none !important;
+  }
+
+  .instructor-details-name-social {
+    margin-bottom: 30px;
+  }
+
+  .instructor-details-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.Mars-instructor-section-wrap {
+  padding: 120px 0px;
+  background-color: #f1f1f3;
+}
+
+.Mars-instructor-section-wrap .Mars-section-title h2 {
+  padding-bottom: 0;
+}
+
+.Mars-instructor-section-wrap .Mars-section-title span {
+  color: #ef4826;
+}
+
+.Mars-instructor-section-wrap .Mars-section-title span:after,
+.Mars-instructor-section-wrap .Mars-section-title span:before {
+  background-color: #ef4826;
+}
+
+#Mars-instructor-slider .owl-stage-outer {
+  overflow: visible;
+}
+
+#Mars-instructor-slider .owl-item {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+#Mars-instructor-slider .owl-item.active {
+  opacity: 1;
+}
+
+#Mars-instructor-slider .owl-nav {
+  left: 0;
+  top: -60px;
+  cursor: pointer;
+  position: absolute;
+}
+
+#Mars-instructor-slider .owl-nav .owl-next,
+#Mars-instructor-slider .owl-nav .owl-prev {
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 60px;
+  margin-left: 25px;
+  text-align: center;
+  border-radius: 100%;
+  display: inline-block;
+  border: 2px solid #ff5520;
+  transition: 0.3s all ease-in-out;
+}
+
+#Mars-instructor-slider .owl-nav .owl-next:hover,
+#Mars-instructor-slider .owl-nav .owl-prev:hover {
+  color: #fff;
+  background-color: #ff5520;
+}
+
+/*---------------------------------------------------- */
+/*FAQ area*/
+/*----------------------------------------------------*/
+.faq-main-section {
+  padding: 120px 0px;
+}
+
+.Mars-faq-tab-btn {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.Mars-faq-tab-btn .nav {
+  display: inherit;
+}
+
+.Mars-faq-tab-btn .nav-tabs .nav-item {
+  margin: 0;
+}
+
+.Mars-faq-tab-btn .nav-tabs .nav-item.show .nav-link,
+.Mars-faq-tab-btn .nav-tabs .nav-link.active,
+.Mars-faq-tab-btn .nav-tabs,
+.Mars-faq-tab-btn .nav-tabs .nav-link {
+  border: none;
+}
+
+.Mars-faq-tab-btn .nav-tabs .nav-link {
+  border-radius: 0;
+}
+
+.Mars-faq-tab-btn .nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #ef4826;
+}
+
+.Mars-faq-tab-btn .faq-tab-btn-area {
+  overflow: hidden;
+  border-radius: 30px;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+}
+
+.Mars-faq-tab-btn li {
+  float: left;
+}
+
+.Mars-faq-tab-btn li a {
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 40px;
+  position: relative;
+}
+
+.Mars-faq-tab-btn li a:after {
+  top: 0;
+  right: 0;
+  width: 1px;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-color: #e5e5e5;
+}
+
+.Mars-faq-tab-btn li:last-child a:after {
+  display: none;
+}
+
+.Mars-faq-que-ans-content {
+  max-width: 530px;
+  margin-bottom: 30px;
+}
+
+.Mars-faq-que-ans-content h3 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.Mars-faq-que-ans-content p {
+  color: #555555;
+}
+
+@media screen and (max-width: 767px) {
+  .faq-main-section {
+    padding: 60px 0px;
+  }
+
+  .Mars-faq-tab-btn li a {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Mars-faq-tab-btn .faq-tab-btn-area {
+    border-radius: 0px;
+  }
+}
+
+/*---------------------------------------------------- */
+/*gallery area*/
+/*----------------------------------------------------*/
+.Mars-photo-gallery-section {
+  padding: 120px 0px;
+}
+
+.Mars-photo-filter-btn {
+  margin-bottom: 45px;
+}
+
+.Mars-photo-filter-btn button {
+  padding: 0;
+  color: #000;
+  border: none;
+  margin: 0px 22px;
+  font-weight: 700;
+  font-style: 18px;
+  background-color: transparent;
+}
+
+.Mars-photo-filter-btn button.is-checked {
+  color: #ef4826;
+}
+
+.grid-size-33 {
+  width: 33.33%;
+}
+
+.Mars-photo-gallery-area {
+  margin-bottom: 50px;
+}
+
+.Mars-photo-gallery-area .grid-sizer {
+  width: 33.33%;
+}
+
+.Mars-photo-gallery-area .filtr-container-area {
+  margin: 0px -5px;
+}
+
+.photo-gallery-innerbox {
+  padding: 5px;
+}
+
+.photo-gallery-innerbox .photo-gallery-img-item {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.photo-gallery-innerbox .photo-gallery-img-item:before {
+  top: 0;
+  left: auto;
+  right: 0;
+  width: 0%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  transition: 0.4s all ease-in-out;
+  background-color: rgba(255, 83, 31, 0.75);
+}
+
+.photo-gallery-innerbox .Mars-photo-popup {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.photo-gallery-innerbox .Mars-photo-popup:before,
+.photo-gallery-innerbox .Mars-photo-popup:after {
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  width: 4px;
+  content: "";
+  height: 0px;
+  margin: 0 auto;
+  border-radius: 30px;
+  position: absolute;
+  background-color: #fff;
+  transform: translateY(-50%);
+  transition: 0.3s all ease-in-out;
+}
+
+.photo-gallery-innerbox .Mars-photo-popup:after {
+  width: 0px;
+  height: 4px;
+}
+
+.photo-gallery-innerbox:hover .Mars-photo-popup:after {
+  width: 60px;
+}
+
+.photo-gallery-innerbox:hover .Mars-photo-popup:before {
+  height: 60px;
+}
+
+.photo-gallery-innerbox:hover .photo-gallery-img-item:before {
+  right: 0;
+  left: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 540px) {
+  .grid-size-33 {
+    width: 100%;
+  }
+}
+
+.not-found-section {
+  padding: 120px 0px;
+}
+
+.not-found-content {
+  margin: 0 auto;
+  max-width: 520px;
+}
+
+.not-found-content span {
+  color: #000;
+  font-size: 36px;
+  display: block;
+  font-weight: 700;
+  line-height: 1.333;
+  margin-bottom: 20px;
+}
+
+.not-found-content a {
+  color: #000;
+  font-weight: 700;
+}
+
+.not-found-content a i {
+  color: #f76652;
+  margin-left: 5px;
+}
+
+.not-found-content .error-img {
+  margin-top: 60px;
+}
+
+.Mars-login-modal .modal-content {
+  border: none;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.Mars-login-modal .modal-dialog {
+  max-width: 650px;
+}
+
+.Mars-login-modal .modal-body {
+  padding: 20px;
+}
+
+.Mars-modal-header {
+  z-index: 1;
+  padding: 30px 0px;
+}
+
+.Mars-modal-header:after {
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+.Mars-modal-header p {
+  color: #fff;
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.Mars-modal-header .Mars-login-head {
+  margin: 0 auto;
+  max-width: 350px;
+}
+.Mars-modal-header .Mars-login-head img {
+  width: 100px;
+}
+
+
+.Mars-modal-signup-login-tab .Mars-faq-tab-btn {
+  padding-bottom: 30px;
+}
+
+.Mars-modal-signup-login-tab p {
+  color: #555555;
+}
+
+.Mars-modal-signup-login-tab p a {
+  color: #000;
+  font-weight: 700;
+}
+
+.Mars-login-content,
+.Mars-sign-up-content {
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+.Mars-login-content input,
+.Mars-sign-up-content input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #efeff0;
+}
+
+.Mars-login-content input:placeholder,
+.Mars-sign-up-content input:placeholder {
+  color: #555555;
+}
+
+.Mars-login-content .Mars-login-label,
+.Mars-sign-up-content .Mars-login-label {
+  text-align: left;
+}
+
+.Mars-login-content .Mars-login-label span,
+.Mars-sign-up-content .Mars-login-label span {
+  float: left;
+  color: #555555;
+}
+
+.Mars-login-content .Mars-login-label a,
+.Mars-sign-up-content .Mars-login-label a {
+  color: #000;
+  float: right;
+  font-weight: 700;
+}
+
+.Mars-login-content .Mars-login-label input,
+.Mars-sign-up-content .Mars-login-label input {
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+}
+
+.Mars-login-content button,
+.Mars-sign-up-content button {
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #ff5520;
+}
+
+.Mars-sign-up-content {
+  max-width: 470px;
+}
+
+.Mars-sign-up-content input {
+  width: 45%;
+  float: left;
+  margin: 0px 10px 20px;
+}
+
+.Mars-sign-up-content button {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.Mars-sign-up-content .Mars-login-label input {
+  margin: 5px 10px 0px 10px;
+}
+
+/*---------------------------------------------------- */
+/*contact area*/
+/*----------------------------------------------------*/
+#yl_map {
+  height: 410px;
+}
+
+.Mars-googlemap {
+  padding: 100px 0px 0px;
+  background-color: #f2f2f4;
+}
+
+.contact-content-section {
+  padding: 100px 0px;
+  background-color: #f2f2f4;
+}
+
+.Mars-contact-content-wrap {
+  margin-top: 40px;
+}
+
+.Mars-contact-content-inner {
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.Mars-contact-content-inner .Mars-contact-content-icon {
+  margin-bottom: 28px;
+}
+
+.Mars-contact-content-inner .Mars-contact-content-text h3 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.Mars-contact-content-inner .Mars-contact-content-text span {
+  display: block;
+  font-size: 18px;
+}
+
+.Mars-contact-form-wrap {
+  margin-top: 90px;
+}
+
+.Mars-contact-form-wrap h3 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.Mars-contact-form-area {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.Mars-contact-form-area .Mars-contact-form-input {
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.Mars-contact-form-area .Mars-contact-form-input input {
+  height: 50px;
+  width: 340px;
+  border: none;
+  margin: 0px 15px;
+  padding-right: 20px;
+  border-radius: 8px;
+  background-color: #efeff0;
+  text-align: right;
+}
+
+.Mars-contact-form-area textarea {
+  width: 100%;
+  border: none;
+  height: 170px;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  background-color: #efeff0;
+  text-align: right;
+}
+
+.Mars-contact-form-area button {
+  color: #fff;
+  width: 100%;
+  border: none;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  background-color: #ef4826;
+}
+
+.Mars-contact-form-area button i {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .Mars-contact-form-area .Mars-contact-form-input input {
+    margin-bottom: 10px;
+  }
+
+  .Mars-contact-content-inner {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Mars-contact-form-area .Mars-contact-form-input input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .Mars-googlemap {
+    padding: 50px 0px 0px;
+  }
+
+  .Mars-contact-form-wrap {
+    margin-top: 20px;
+  }
+
+  .Mars-contact-form-wrap h3 {
+    font-size: 30px;
+  }
+
+  .Mars-contact-form-area {
+    padding: 40px 15px;
+  }
+}
+
+/*---------------------------------------------------- */
+/*Search Course area*/
+/*----------------------------------------------------*/
+.Mars-course-search-section-3 {
+  padding: 110px 0px;
+}
+
+.search-form-wrap {
+  margin: 0 auto;
+  max-width: 750px;
+  margin-top: 30px;
+}
+
+.search-form-wrap input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  padding-left: 30px;
+  border-radius: 7px;
+  box-shadow: 0px 6px 38px 0px rgba(0, 0, 0, 0.07);
+}
+
+.search-form-wrap button {
+  top: 0;
+  right: 0;
+  color: #fff;
+  border: none;
+  height: 60px;
+  width: 150px;
+  font-weight: 700;
+  position: absolute;
+  border-radius: 7px;
+  background-color: #ff5520;
+}
+
+.Mars-fun-fact-wrapper {
+  padding-top: 60px;
+}
+
+.Mars-fun-fact-inner .Mars-fun-fact-icon {
+  line-height: 1;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+.Mars-fun-fact-inner .Mars-fun-fact-icon i {
+  color: #ff5520;
+  font-size: 50px;
+}
+
+.Mars-fun-fact-inner .Mars-fun-fact-icon:after {
+  top: 5px;
+  right: 0;
+  height: 40px;
+  width: 2px;
+  content: "";
+  position: absolute;
+  background-color: #f2f2f4;
+}
+
+.Mars-fun-fact-inner .Mars-fun-fact-text span,
+.Mars-fun-fact-inner .Mars-fun-fact-text strong {
+  line-height: 1;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Fira Sans";
+}
+
+.Mars-fun-fact-inner .Mars-fun-fact-text strong {
+  top: 2px;
+  position: relative;
+}
+
+/*---------------------------------------------------- */
+/*Shop area*/
+/*----------------------------------------------------*/
+.Mars-product-wrap {
+  margin: 0 auto;
+  max-width: 370px;
+  margin-bottom: 30px;
+}
+
+.Mars-product-wrap .Mars-product-img {
+  overflow: hidden;
+  background-color: #f1f1f3;
+}
+
+.Mars-product-wrap .Mars-product-img .Mars-product-cart {
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  transform: scale(0);
+  position: absolute;
+  text-align: center;
+  border-radius: 100%;
+  background-color: #ff5520;
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-product-wrap .Mars-product-img:before {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.4s all ease-in-out;
+}
+
+.Mars-product-wrap .Mars-product-text {
+  margin-top: 20px;
+}
+
+.Mars-product-wrap .Mars-product-text h3 {
+  color: #000;
+  float: left;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.Mars-product-wrap .Mars-product-text .Mars-product-price {
+  float: right;
+}
+
+.Mars-product-wrap .Mars-product-text .Mars-product-price span {
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ef4826;
+  font-family: "Fira Sans";
+}
+
+.Mars-product-wrap .Mars-product-text .Mars-product-price span del {
+  color: #53536c;
+  font-size: 16px;
+}
+
+.Mars-product-wrap:hover .Mars-product-cart {
+  transform: scale(1);
+}
+
+.Mars-product-wrap:hover .Mars-product-img:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Mars-shop-wrap-section {
+  padding-bottom: 100px;
+}
+
+.Mars-product-content {
+  margin-top: 40px;
+}
+
+.Mars-shop-btn {
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  border-radius: 5px;
+  background-color: #ff5520;
+}
+
+.Mars-shop-btn a {
+  width: 100%;
+  display: block;
+}
+
+/*---------------------------------------------------- */
+/*counter area*/
+/*----------------------------------------------------*/
+.Mars-counter-section {
+  padding: 100px 0px;
+  background: fixed;
+}
+
+.Mars-counter-section .bg-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(2, 16, 46, 0.85);
+}
+
+.Mars-counter-icon-text .Mars-counter-icon {
+  padding-top: 5px;
+  margin-right: 15px;
+}
+
+.Mars-counter-icon-text .Mars-counter-text {
+  overflow: hidden;
+}
+
+.Mars-counter-icon-text .Mars-counter-text span {
+  color: #fff;
+  line-height: 1;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.Mars-counter-icon-text .Mars-counter-text strong {
+  font-size: 24px;
+  color: #ff3614;
+}
+
+.Mars-counter-icon-text .Mars-counter-text p {
+  color: #98a5c2;
+}
+
+@media screen and (max-width: 991px) {
+  .Mars-counter-icon-text {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .Mars-counter-section {
+    padding: 50px 0px;
+  }
+}
+
+/*---------------------------------------------------- */
+/*CTA area*/
+/*----------------------------------------------------*/
+.Mars-cta-section-4 {
+  overflow: visible;
+}
+
+.Mars-cta-content-4 {
+  margin: 0 auto;
+  max-width: 975px;
+}
+
+.Mars-cta-contact-4 {
+  width: 50%;
+  padding: 40px;
+  background-color: #eaecf0;
+}
+
+.Mars-cta-contact-4 .Mars-cta-img-4 {
+  bottom: 0;
+  left: 10px;
+  position: absolute;
+}
+
+.Mars-cta-contact-4 .Mars-cta-contact-text {
+  float: right;
+  max-width: 260px;
+}
+
+.Mars-cta-contact-4 .Mars-cta-contact-text h3 {
+  color: #07173a;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.364;
+}
+
+.Mars-cta-contact-4 .Mars-cta-contact-text a {
+  color: #fff;
+  width: 130px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #07173a;
+}
+
+.Mars-cta-register-4 {
+  width: 50%;
+}
+
+.Mars-cta-register-4 .Mars-cta-register-text {
+  margin: 0 auto;
+  max-width: 325px;
+  padding-top: 65px;
+}
+
+.Mars-cta-register-4 .Mars-cta-register-text h3 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.385;
+  padding-bottom: 20px;
+}
+
+.Mars-cta-register-4 .Mars-cta-register-text a {
+  font-weight: 700;
+  color: #ff3614;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .Mars-cta-contact-4 .Mars-cta-img-4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 680px) {
+
+  .Mars-cta-contact-4,
+  .Mars-cta-register-4 {
+    width: 100%;
+  }
+
+  .Mars-cta-contact-4 .Mars-cta-contact-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .Mars-cta-content-4 {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .Mars-cta-register-4 .Mars-cta-register-text {
+    padding: 40px;
+  }
+}
+
+/*---------------------------------------------------- */
+/*Footer area*/
+/*----------------------------------------------------*/
+.Mars-footer-section {
+  padding-top: 80px;
+}
+
+.Mars-footer-copyright {
+  padding: 25px 0px;
+}
+
+.Mars-footer-copyright span {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.Mars-footer-content-wrap {
+  padding-bottom: 85px;
+  border-bottom: 2px solid #383737;
+}
+
+.Mars-footer-widget .widget-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.Mars-footer-widget .widget-title:before {
+  left: 0;
+  height: 3px;
+  width: 30px;
+  content: "";
+  bottom: -12px;
+  position: absolute;
+  background-color: #ef4826;
+}
+
+.Mars-footer-widget .Mars-footer-logo-widget .Mars-footer-logo {
+  padding-bottom: 18px;
+}
+
+.Mars-footer-widget .Mars-footer-logo-widget p {
+  color: #9d9d9d;
+  padding-bottom: 35px;
+}
+
+.Mars-footer-widget .Mars-footer-logo-widget .footer-logo-btn {
+  color: #fff;
+  height: 35px;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 35px;
+  overflow: hidden;
+  display: inline-block;
+  background-color: #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-footer-widget .Mars-footer-logo-widget .footer-logo-btn:after {
+  background-color: #fff;
+}
+
+.Mars-footer-widget .Mars-footer-logo-widget .footer-logo-btn:hover {
+  color: #000;
+}
+
+.Mars-footer-widget .Mars-footer-newslatter-widget p {
+  color: #9d9d9d;
+}
+
+.Mars-footer-widget .Mars-footer-newslatter-widget form {
+  margin-top: 30px;
+  position: relative;
+}
+
+.Mars-footer-widget .Mars-footer-newslatter-widget input {
+  height: 45px;
+  width: 100%;
+  padding-left: 20px;
+  border: 2px solid #313131;
+  background-color: transparent;
+}
+
+.Mars-footer-widget .Mars-footer-newslatter-widget input::placeholder {
+  color: #fff;
+  font-size: 14px;
+}
+
+.Mars-footer-widget .Mars-footer-newslatter-widget button {
+  top: 0;
+  right: 0;
+  width: 60px;
+  padding: 0;
+  color: #fff;
+  height: 45px;
+  border: none;
+  position: absolute;
+  background-color: #ef4826;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-footer-widget .Mars-footer-newslatter-widget button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.Mars-footer-widget .Mars-footer-newslatter-widget .Mars-footer-social {
+  margin-top: 22px;
+}
+
+.Mars-footer-widget .Mars-footer-newslatter-widget .Mars-footer-social li {
+  margin-right: 15px;
+}
+
+.Mars-footer-widget .Mars-footer-newslatter-widget .Mars-footer-social li a {
+  color: #494949;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-footer-widget .Mars-footer-newslatter-widget .Mars-footer-social li a:hover {
+  color: #ef4826;
+}
+
+.Mars-footer-widget .Mars-footer-info-widget {
+  padding-left: 20px;
+}
+
+.Mars-footer-widget .Mars-footer-info-widget ul {
+  padding-top: 15px;
+}
+
+.Mars-footer-widget .Mars-footer-info-widget i {
+  float: left;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #ef4826;
+  margin-right: 10px;
+}
+
+.Mars-footer-widget .Mars-footer-info-widget a {
+  color: #9d9d9d;
+  display: block;
+  font-size: 14px;
+  overflow: hidden;
+  max-width: 170px;
+}
+
+.Mars-footer-widget .Mars-footer-info-widget .office-open-hour {
+  margin-top: 10px;
+}
+
+.Mars-footer-widget .Mars-footer-info-widget .office-open-hour span {
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.Mars-footer-widget .Mars-footer-info-widget .office-open-hour p {
+  font-size: 14px;
+  color: #9d9d9d;
+  max-width: 180px;
+}
+
+.Mars-footer-widget .Mars-footer-instagram-widget .insta-feed {
+  padding-top: 10px;
+}
+
+.Mars-footer-widget .Mars-footer-instagram-widget .insta-feed li {
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+  margin-bottom: 7px;
+  position: relative;
+  background-color: #000;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-footer-widget .Mars-footer-instagram-widget .insta-feed li:before {
+  top: 0;
+  opacity: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-footer-widget .Mars-footer-instagram-widget .insta-feed li i {
+  left: 0;
+  top: 50%;
+  right: 0;
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-50%);
+  transition: 0.3s all ease-in-out;
+}
+
+.Mars-footer-widget .Mars-footer-instagram-widget .insta-feed li:hover:before {
+  opacity: 0.7;
+}
+
+.Mars-footer-widget .Mars-footer-instagram-widget .insta-feed li:hover i {
+  opacity: 1;
+}
+
+/*Footer section 2*/
+/*--------------------------*/
+.Mars-footer-section-2 .Mars-footer-content-wrap {
+  padding-top: 80px;
+}
+
+.Mars-footer-section-2 .Mars-footer-widget .Mars-footer-logo-widget .footer-logo-btn {
+  border-radius: 30px;
+  background-color: #ff5520;
+}
+
+.Mars-footer-section-2 .Mars-footer-widget .widget-title:before,
+.Mars-footer-section-2 .Mars-footer-widget .Mars-footer-newslatter-widget button {
+  background-color: #ff5520;
+}
+
+.Mars-footer-section-2 .Mars-footer-widget .Mars-footer-newslatter-widget .Mars-footer-social li a:hover,
+.Mars-footer-section-2 .Mars-footer-widget .Mars-footer-info-widget i {
+  color: #ff5520;
+}
+
+/*---------------------------------------------------- */
+/*Responsive area*/
+/*----------------------------------------------------*/
+@media screen and (max-width: 5120px) {
+  .Mars-registration-section:after {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .Mars-registration-section:after {
+    width: 54%;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .Mars-banner-content .Mars-banner-img {
+    right: -140px;
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  .Mars-banner-content .Mars-banner-img {
+    right: -200px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #Mars-main-slider .owl-dots {
+    left: 20px;
+  }
+
+  .Mars-banner-content .Mars-banner-img {
+    width: 50%;
+    right: 0;
+  }
+
+  .Mars-banner-text {
+    max-width: 540px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #Mars-main-slider .owl-dots {
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 30px;
+    text-align: center;
+    transform: translateY(0);
+  }
+
+  #Mars-main-slider .owl-dots .owl-dot {
+    display: inline-block;
+    margin: 0px 3px;
+  }
+
+  .Mars-main-navigation li {
+    margin-right: 45px;
+  }
+
+  .banner-search-select {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Mars-header-top-cta li {
+    padding-left: 50px;
+  }
+
+  .Mars-main-navigation li {
+    margin-right: 45px;
+  }
+
+  .Mars-section-title h2 {
+    font-size: 35px;
+  }
+
+  .Mars-blog-img-text .Mars-blog-title h3 {
+    font-size: 20px;
+  }
+
+  .Mars-banner-content .Mars-banner-img {
+    width: 45%;
+    top: 240px;
+  }
+
+  .Mars-category-img-text .Mars-category-text h3 {
+    font-size: 20px;
+  }
+
+  .Mars-popular-course-img-text {
+    padding: 25px 15px;
+  }
+
+  .Mars-popular-course-img-text .popular-course-fee strong {
+    font-size: 20px;
+  }
+
+  .Mars-popular-course-img-text .popular-course-fee span,
+  .Mars-popular-course-img-text .popular-course-fee del {
+    font-size: 16px;
+  }
+
+  .Mars-popular-course-img-text .popular-course-title .Mars-course-meta a {
+    margin-right: 5px;
+  }
+
+  .Mars-popular-course-img-text .popular-course-rate .p-course-btn {
+    display: none;
+  }
+
+  .Mars-banner-content .Mars-banner-img {
+    right: -60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Mars-header-top-cta {
+    display: none;
+  }
+
+  .Mars-header-menu-wrap {
+    display: none;
+  }
+
+  .header-style-two .Mars-main-navigation {
+    display: none;
+  }
+
+  .Mars-mobile_menu_button {
+    display: block;
+  }
+
+  .Mars-header-top {
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .Mars-header-main {
+    padding: 10px 0px;
+  }
+
+  .Mars-sticky-menu {
+    top: 0;
+  }
+
+  .Mars-feature-innerbox {
+    margin-bottom: 30px;
+  }
+
+  .Mars-about-video-area {
+    margin: 0 auto;
+    max-width: 570px;
+  }
+
+  #Mars-department-slider-id .owl-nav,
+  #Mars-blog-slider-id .owl-nav {
+    position: static;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  #Mars-department-slider-id .owl-nav .owl-next,
+  #Mars-department-slider-id .owl-nav .owl-prev,
+  #Mars-blog-slider-id .owl-nav .owl-next,
+  #Mars-blog-slider-id .owl-nav .owl-prev {
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+  }
+
+  .Mars-course-filter-wrap .grid-size-25,
+  .Mars-course-filter-wrap .grid-sizer {
+    width: 33.33%;
+  }
+
+  .Mars-registration-section:after {
+    display: none;
+  }
+
+  .Mars-registration-text-wrap {
+    padding-left: 0;
+  }
+
+  .Mars-registration-text-wrap a {
+    background-color: #000;
+  }
+
+  .Mars-newslatter-content {
+    padding: 0;
+  }
+
+  .Mars-footer-widget {
+    margin-bottom: 30px;
+  }
+
+  .Mars-footer-widget .Mars-footer-info-widget {
+    padding-left: 0;
+  }
+
+  .Mars-newslatter-content .Mars-newslatter-form button {
+    width: 100px;
+  }
+
+  .Mars-newslatter-content .Mars-newslatter-form {
+    padding-left: 0;
+  }
+
+  .Mars-banner-content .Mars-banner-img {
+    display: none;
+  }
+
+  .Mars-banner-text {
+    min-width: 100%;
+  }
+
+  .header-style-two .Mars-header-cart-login {
+    display: none;
+  }
+
+  .Mars-registration-content-2 .registration-side-img {
+    display: none;
+  }
+
+  .Mars-registration-content-2:before {
+    width: 100%;
+  }
+
+  .Mars-popular-course-img-text .popular-course-rate .p-course-btn {
+    display: block;
+  }
+
+  .header-style-three .Mars-main-navigation {
+    display: none;
+  }
+
+  .header-style-three {
+    padding-top: 20px;
+  }
+
+  .header-style-three .Mars-header-cart-login {
+    margin-right: 35px;
+    padding-top: 12px;
+  }
+
+  .Mars-fun-fact-inner {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .banner-search-select .banner-search-shape2,
+  .banner-search-select .banner-search-shape1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .Mars-course-filter-wrap .grid-size-25,
+  .Mars-course-filter-wrap .grid-sizer {
+    width: 50%;
+  }
+
+  .Mars-course-img-text {
+    margin: 0 auto;
+    max-width: 270px;
+  }
+
+  .Mars-popular-course-img-text {
+    margin: 0 auto;
+    max-width: 270px;
+    margin-bottom: 30px;
+  }
+
+  .banner-search-select .banner-select-option {
+    width: inherit;
+  }
+
+  .banner-search-select .Mars-select-option-wrap {
+    float: none;
+  }
+
+  .banner-search-select button {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .slider-main-item .slider-main-text h1 {
+    font-size: 50px;
+  }
+
+  .slider-main-item .slider-main-text {
+    padding-bottom: 150px;
+  }
+
+  .Mars-newslatter-content .Mars-newslatter-form {
+    padding-left: 0;
+  }
+
+  .Mars-newslatter-content .Mars-newslatter-form input {
+    max-width: 100%;
+  }
+
+  .slider-main-item-2 .slider-main-text h1 {
+    font-size: 45px;
+  }
+
+  .slider-main-item-2 {
+    padding: 70px 0px;
+  }
+
+  .slider-main-item-2 .slider-main-text a {
+    height: 45px;
+    width: 145px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider-main-item .slider-main-text h1 {
+    font-size: 36px;
+  }
+
+  .slider-main-item .slider-main-text .slider-main-btn a {
+    height: 45px;
+    line-height: 45px;
+    width: 140px;
+  }
+
+  .Mars-feature-section {
+    padding: 50px 0px 20px;
+  }
+
+  .Mars-section-title h2 {
+    font-size: 26px;
+  }
+
+  .Mars-about-qoute span {
+    font-size: 20px;
+  }
+
+  .Mars-about-section {
+    padding-bottom: 50px;
+  }
+
+  .Mars-department-section {
+    padding: 50px 0px;
+  }
+
+  .Mars-department-section .Mars-department-btn {
+    height: 45px;
+    font-size: 14px;
+    line-height: 45px;
+  }
+
+  .Mars-course-top .Mars-section-title {
+    padding-left: 0;
+  }
+
+  .Mars-course-top .Mars-course-title-text {
+    padding-left: 0;
+  }
+
+  .Mars-course-filter-wrap .grid-size-25,
+  .Mars-course-filter-wrap .grid-sizer {
+    width: 100%;
+  }
+
+  .Mars-course-filter-wrap .Mars-course-filter-btn button {
+    margin: 5px;
+  }
+
+  .Mars-course-top .Mars-course-title-text {
+    margin-top: 0;
+  }
+
+  .Mars-course-section {
+    padding: 50px 0px 35px;
+  }
+
+  .Mars-registration-countdown-wrap ul li .arch-count-down-number {
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+    line-height: 60px;
+  }
+
+  .Mars-registration-countdown-wrap ul li .count-unit {
+    font-size: 16px;
+  }
+
+  .Mars-registration-countdown-wrap ul li {
+    margin-right: 10px;
+  }
+
+  .Mars-registration-countdown-wrap {
+    margin: 20px 0px;
+  }
+
+  .Mars-registration-section {
+    padding: 50px 0px;
+  }
+
+  .Mars-blog-section {
+    padding: 50px 0px;
+  }
+
+  .Mars-blog-section .Mars-blog-slide-wrap {
+    margin-top: 15px;
+  }
+
+  .Mars-newslatter-content .Mars-newslatter-text-icon .Mars-newslatter-text h3 {
+    font-size: 20px;
+  }
+
+  .Mars-testimonial-section {
+    padding: 50px 0px;
+  }
+
+  .banner-search-wrap .banner-search-shape1,
+  .banner-search-wrap .banner-search-shape2 {
+    display: none;
+  }
+
+  .Mars-banner-text {
+    text-align: center;
+    padding: 170px 0px 60px;
+  }
+
+  .banner-search-select .banner-select-option {
+    width: 120px;
+  }
+
+  .banner-search-select {
+    padding: 0;
+  }
+
+  .banner-search-select .banner-select-option .nice-select {
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  .banner-search-select button {
+    height: 40px;
+    width: 110px;
+    line-height: 40px;
+    margin: 5px 0px 10px;
+  }
+
+  .banner-search-wrap {
+    position: static;
+    text-align: center;
+  }
+
+  .Mars-banner-text h1 {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+
+  .Mars-banner-text .Mars-banner-tag span {
+    padding: 5px 10px;
+  }
+
+  .Mars-banner-text .Mars-banner-tag {
+    margin-bottom: 20px;
+    background-color: transparent;
+  }
+
+  .Mars-banner-text p {
+    font-size: 18px;
+  }
+
+  .Mars-banner-text .Mars-banner-btn {
+    margin-right: 15px;
+  }
+
+  .Mars-banner-text .Mars-banner-btn a {
+    height: 45px;
+    width: 140px;
+    line-height: 45px;
+  }
+
+  .Mars-banner-text .Mars-banner-btn a i {
+    display: none;
+  }
+
+  .Mars-banner-text .Mars-banner-play {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+  }
+
+  .Mars-banner-btn-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Mars-banner-section {
+    padding-bottom: 20px;
+  }
+
+  .Mars-category-section {
+    padding: 50px 0px;
+  }
+
+  .Mars-section-title.Mars-title-style-two .title-watermark {
+    font-size: 60px;
+    top: -30px;
+  }
+
+  .Mars-popular-course-section,
+  .Mars-testimonial-section-2 {
+    padding: 50px 0px;
+  }
+
+  .Mars-registration-content-2 {
+    padding: 20px;
+  }
+
+  .Mars-registration-content-2 .registration-text-2 h3 {
+    font-size: 24px;
+  }
+
+  .Mars-registration-section-2 {
+    padding-top: 30px;
+  }
+
+  .Mars-category-img-text .Mars-category-text h3,
+  .Mars-blog-img-text-2 .Mars-blog-title-text-2 h3 {
+    font-size: 20px;
+  }
+
+  .Mars-newslatter-content .Mars-newslatter-form input {
+    padding-left: 10px;
+  }
+
+  .Mars-newslatter-content .Mars-newslatter-form input::placeholder {
+    font-size: 14px;
+  }
+
+  .Mars-newslatter-section-2 .Mars-newslatter-content {
+    padding: 20px;
+  }
+
+  .Mars-newslatter-content .Mars-newslatter-text-icon .Mars-newslatter-text span img {
+    display: none;
+  }
+
+  .Mars-banner-text .Mars-banner-tag span {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .Mars-banner-text .Mars-banner-tag {
+    padding-right: 0;
+  }
+
+  .banner-search-select {
+    top: 0;
+    margin-bottom: 0;
+  }
+
+  .slider-main-item-2 .slider-main-text h1 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  #Mars-main-slider-2 .owl-nav .owl-next,
+  #Mars-main-slider-2 .owl-nav .owl-prev {
+    display: none;
+  }
+
+  .Mars-category-section-2 {
+    padding: 50px 0px 30px;
+  }
+
+  .Mars-course-section-3 {
+    padding: 50px 0px 30px;
+  }
+
+  .search-form-wrap {
+    text-align: center;
+  }
+
+  .search-form-wrap button {
+    width: 130px;
+    height: 45px;
+    margin-top: 20px;
+    position: static;
+  }
+
+  .Mars-course-search-section-3 {
+    padding: 50px 0px;
+  }
+
+  #Mars-instructor-slider .owl-nav {
+    top: 0;
+    position: static;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  #Mars-instructor-slider .owl-nav .owl-next,
+  #Mars-instructor-slider .owl-nav .owl-prev {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+  }
+
+  .Mars-instructor-section-wrap {
+    padding: 50px 0px;
+  }
+
+  .Mars-event-wrap-section {
+    padding: 50px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .slider-main-item .slider-main-text h1 {
+    font-size: 30px;
+  }
+
+  .Mars-section-title h2 {
+    font-size: 22px;
+  }
+
+  .Mars-about-qoute span {
+    font-size: 18px;
+  }
+
+  .Mars-about-qoute .Mars-quote-author h4 {
+    font-size: 16px;
+  }
+
+  .Mars-registration-text-wrap h3 {
+    font-size: 24px;
+  }
+
+  .Mars-banner-section .banner-dot-square {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .Mars-newslatter-content .Mars-newslatter-text-icon .Mars-newslatter-icon i {
+    font-size: 45px;
+  }
+
+  .Mars-registration-countdown-wrap ul li .arch-count-down-number {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+}
+
+/*---------------------------------------------------- */
