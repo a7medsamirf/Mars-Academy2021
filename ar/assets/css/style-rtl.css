@@ -5491,7 +5491,7 @@ select:visited {
 
 .Mars-newslatter-content .Mars-newslatter-form {
   margin-top: 20px;
-  padding-left: 55px;
+  padding-right: 55px;
 }
 
 .Mars-newslatter-content .Mars-newslatter-form input {
@@ -5499,13 +5499,13 @@ select:visited {
   width: 100%;
   border: none;
   max-width: 320px;
-  padding-left: 20px;
+  padding-right: 20px;
   background-color: #292929;
 }
 
 .Mars-newslatter-content .Mars-newslatter-form button {
   top: 0;
-  right: 0;
+  left: 0;
   padding: 0;
   color: #fff;
   border: none;
@@ -7339,7 +7339,7 @@ select:visited {
 }
 
 .Mars-footer-widget .widget-title:before {
-  left: 0;
+  right: 0;
   height: 3px;
   width: 30px;
   content: "";
@@ -7390,7 +7390,7 @@ select:visited {
 .Mars-footer-widget .Mars-footer-newslatter-widget input {
   height: 45px;
   width: 100%;
-  padding-left: 20px;
+  padding-right: 20px;
   border: 2px solid #313131;
   background-color: transparent;
 }
@@ -7402,7 +7402,7 @@ select:visited {
 
 .Mars-footer-widget .Mars-footer-newslatter-widget button {
   top: 0;
-  right: 0;
+  left: 0;
   width: 60px;
   padding: 0;
   color: #fff;
@@ -7444,11 +7444,11 @@ select:visited {
 }
 
 .Mars-footer-widget .Mars-footer-info-widget i {
-  float: left;
+  float: right;
   font-size: 14px;
   margin-top: 5px;
   color: #ef4826;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .Mars-footer-widget .Mars-footer-info-widget a {

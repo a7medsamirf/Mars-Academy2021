@@ -224,6 +224,7 @@ Author:
 					items: 1,
 					loop: true,
 					nav: false,
+					rtl: true,
 					dots: true,
 					autoplay: true,
 					navSpeed: 1000,
@@ -235,6 +236,7 @@ Author:
 					items: 1,
 					loop: true,
 					nav: true,
+					rtl: true,
 					dots: false,
 					autoplay: true,
 					navSpeed: 1000,
@@ -476,7 +478,9 @@ Author:
 					$('#Mars-blog-slider-2').owlCarousel({
 						margin:30,
 						responsiveClass:true,
+						navText:["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"],
 						nav: false,
+						rtl: true,
 						dots: true,
 						loop:true,
 						responsive:{
@@ -512,6 +516,7 @@ Author:
 					$('#Mars-instructor-slider').owlCarousel({
 						margin:30,
 						responsiveClass:true,
+						rtl: true,
 						nav: true,
 						dots: false,
 						navText:["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"],
