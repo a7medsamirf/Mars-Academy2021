@@ -512,7 +512,7 @@ select:visited {
 .Mars-main-navigation .dropdown:after {
   top: -2px;
   color: #ef4826;
-  right: -14px;
+  left: -14px;
   content: "+";
   font-size: 18px;
   font-weight: 700;
@@ -683,17 +683,7 @@ select:visited {
   display: none;
 }
 
-.header-style-two .Mars-main-navigation li a:after {
-  top: 26px;
-  left: 25px;
-  width: 0px;
-  content: "";
-  height: 5px;
-  position: absolute;
-  border-radius: 100%;
-  background-color: #ef4826;
-  transition: 0.3s all ease-in-out;
-}
+
 
 .header-style-two .Mars-main-navigation li {
   position: relative;
@@ -800,12 +790,8 @@ select:visited {
 .header-style-three.Mars-sticky-menu {
   position: fixed;
   padding: 15px 0px;
-  background-color: #000a1f;
 }
-.header-style-three.Mars-sticky-menu li a,
-.header-style-three.Mars-sticky-menu .Mars-header-cart-login .Mars-top-cart-login button {
-  color: #fff;
-}
+
 .header-style-three.Mars-sticky-menu .Mars-main-navigation,
 .header-style-three.Mars-sticky-menu .Mars-header-cart-login {
   padding-top: 10px;
@@ -3672,7 +3658,7 @@ select:visited {
   height: 60px;
   line-height: 60px;
   border-radius: 3px;
-  padding-left: 40px;
+  padding-right: 40px;
   background-color: #fff;
   box-shadow: 0px 0px 35px 0px rgba(12, 12, 12, 0.08);
 }
@@ -3723,7 +3709,7 @@ select:visited {
 
 .course-page-course-content-top .course-grid-top-bar .Mars-course-search button {
   top: 0;
-  right: 0;
+  left: 0;
   color: #fff;
   border: none;
   height: 100%;
@@ -3800,7 +3786,7 @@ select:visited {
   background-color: #fff;
 }
 
-.course-details-tab-wrapper {
+#tabsContent {
   padding: 40px 40px;
 }
 
@@ -4140,7 +4126,7 @@ select:visited {
   width: 254px;
   height: 45px;
   border: none;
-  padding-left: 15px;
+  padding-right: 15px;
   border-radius: 4px;
   margin-bottom: 20px;
   background-color: #efeff0;
@@ -4230,7 +4216,7 @@ select:visited {
 .course-widget-wrap .cd-course-table-widget .course-table-item .cd-table-title i,
 .course-widget-wrap .cd-course-table-widget .course-table-item .cd-table-valur i {
   color: #ff5520;
-  margin-right: 7px;
+  margin-left: 7px;
 }
 
 .course-widget-wrap .cd-course-table-widget .cd-course-price span {
@@ -4860,7 +4846,7 @@ select:visited {
 }
 
 .Mars-blog-img-text-2 .Mars-blog-title-text-2 h3:before {
-  left: 0;
+  right: 0;
   bottom: -1px;
   height: 3px;
   content: "";
@@ -5082,14 +5068,14 @@ select:visited {
   width: 100%;
   height: 48px;
   border: none;
-  padding-left: 15px;
+  padding-right: 15px;
   border-radius: 4px;
   background-color: #fff;
 }
 
 .Mars-blog-widget-wrap .Mars-search-widget button {
   top: 0;
-  right: 0;
+  left: 0;
   width: 48px;
   color: #fff;
   border: none;
@@ -5110,17 +5096,17 @@ select:visited {
 .Mars-blog-widget-wrap .Mars-category-widget li a {
   color: #000;
   font-weight: 700;
-  padding-left: 15px;
+  padding-right: 15px;
   position: relative;
   transition: 0.4s all ease-in-out;
 }
 
 .Mars-blog-widget-wrap .Mars-category-widget li a:after {
-  left: 0;
-  top: -1px;
+  right: 0;
+  top: 5px;
   color: #ff5520;
   font-size: 14px;
-  content: "";
+  content: "";
   position: absolute;
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
@@ -5156,7 +5142,7 @@ select:visited {
   width: 65px;
   height: 65px;
   overflow: hidden;
-  margin-right: 10px;
+  margin-left: 10px;
   border-radius: 4px;
 }
 
@@ -5245,18 +5231,18 @@ select:visited {
   font-size: 21px;
   font-style: italic;
   margin-bottom: 35px;
-  padding: 20px 0px 20px 60px;
-  border-left: 4px solid #ff5520;
+  padding: 20px 20px 20px 0;
+  border-right: 4px solid #ff5520;
 }
 
 .Mars-blog-details-section .Mars-blog-details-wrap blockquote .blockquote-author {
   font-style: normal;
-  padding-left: 45px;
+  padding-right: 45px;
   position: relative;
 }
 
 .Mars-blog-details-section .Mars-blog-details-wrap blockquote .blockquote-author:before {
-  left: 0;
+  right: 0;
   top: 18px;
   height: 1px;
   width: 38px;
@@ -5347,7 +5333,7 @@ select:visited {
   width: 100px;
   height: 100px;
   overflow: hidden;
-  margin-right: 20px;
+  margin-left: 20px;
   border-radius: 100%;
 }
 
@@ -5372,7 +5358,7 @@ select:visited {
 
 .Mars-blog-details-section .Mars-blog-details-comment-area .Mars-comment-innerbox .Mars-comment-text .Mars-comment-reply-btn {
   top: 0;
-  right: 0;
+  left: 0;
   color: #fff;
   height: 42px;
   width: 100px;
@@ -5910,7 +5896,7 @@ select:visited {
 }
 
 .Mars-breadcrumb-content .Mars-breadcrumb-item .breadcrumb-item+.breadcrumb-item::before {
-  content: "";
+  content: "";
   font-weight: 900;
   color: #ef4826;
   font-family: "Font Awesome 5 Free";
@@ -6776,7 +6762,7 @@ select:visited {
   width: 100%;
   height: 50px;
   border: none;
-  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
   background-color: #efeff0;

@@ -797,12 +797,8 @@ select:visited {
 .header-style-three.Mars-sticky-menu {
   position: fixed;
   padding: 15px 0px;
-  background-color: #212121;
 }
-.header-style-three.Mars-sticky-menu li a,
-.header-style-three.Mars-sticky-menu .Mars-header-cart-login .Mars-top-cart-login button {
-  color: #fff;
-}
+
 .header-style-three.Mars-sticky-menu .Mars-main-navigation,
 .header-style-three.Mars-sticky-menu .Mars-header-cart-login {
   padding-top: 10px;
@@ -3796,10 +3792,9 @@ select:visited {
   background-color: #fff;
 }
 
-.course-details-tab-wrapper {
+#tabsContent {
   padding: 40px 40px;
 }
-
 .course-details-tab-btn {
   margin-bottom: 30px;
   background-color: #f2f2f4;
