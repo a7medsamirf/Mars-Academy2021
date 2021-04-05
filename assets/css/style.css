@@ -680,7 +680,7 @@ select:visited {
   display: none;
 }
 
-.header-style-two .Mars-main-navigation li a:after {
+/* .header-style-two .Mars-main-navigation li a:after {
   top: 26px;
   left: 25px;
   width: 0px;
@@ -691,7 +691,7 @@ select:visited {
   background-color: #ef4826;
   transition: 0.3s all ease-in-out;
 }
-
+ */
 .header-style-two .Mars-main-navigation li {
   position: relative;
 }
