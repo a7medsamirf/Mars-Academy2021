@@ -12,8 +12,56 @@ theme.
 @Template Name: 
 @Author:
 
-
 =====================================================================*/
+
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Nunito:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Qwigley');
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700&display=swap&subset=devanagari,latin-ext');
@@ -529,7 +577,6 @@ select:visited {
   border: none;
   display: block;
   border-radius: 0;
-  overflow: hidden;
   visibility: hidden;
   position: absolute;
   background-color: #fff;
@@ -782,6 +829,28 @@ select:visited {
   background-color: #ff5520;
 }
 
+.Mars-main-navigation  .dropdown.submenu:after {
+  top: 10px;
+  color: #ef4826;
+  right: 20px;
+  content: "+";
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+}
+
+ul.dropdown-menu.right-menu {
+  position: absolute !important;
+  top: 0 !important;
+  left: 201px !important;
+  display: none !important;
+}
+
+li.dropdown.submenu:hover .dropdown-menu.right-menu {
+  display: block !important;
+}
+
 .header-style-three .Mars-header-cart-login {
   padding-top: 15px;
 }
@@ -870,7 +939,6 @@ select:visited {
   border: none;
   display: block;
   border-radius: 0;
-  overflow: hidden;
   visibility: hidden;
   position: absolute;
   background-color: #fff;

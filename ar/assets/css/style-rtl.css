@@ -532,7 +532,6 @@ select:visited {
   border: none;
   display: block;
   border-radius: 0;
-  overflow: hidden;
   visibility: hidden;
   position: absolute;
   background-color: #fff;
@@ -774,7 +773,27 @@ select:visited {
 .header-style-three .Mars-main-navigation .dropdown .dropdown-menu li a:hover {
   background-color: #ff5520;
 }
+.Mars-main-navigation  .dropdown.submenu:after {
+  top: 5px;
+  color: #ef4826;
+  left: 20px;
+  content: "+";
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  transition: 0.3s all ease-in-out;
+}
 
+ul.dropdown-menu.right-menu {
+  position: absolute !important;
+  top: 0 !important;
+  right: 201px !important;
+  display: none !important;
+}
+
+li.dropdown.submenu:hover .dropdown-menu.right-menu {
+  display: block !important;
+}
 .header-style-three .Mars-header-cart-login {
   padding-top: 15px;
 }
@@ -863,7 +882,6 @@ select:visited {
   border: none;
   display: block;
   border-radius: 0;
-  overflow: hidden;
   visibility: hidden;
   position: absolute;
   background-color: #fff;
